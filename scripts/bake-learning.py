@@ -19,6 +19,7 @@ FILES = [
     "Professional_API_Glossary.txt",
     "Python Integration.txt",
     "Full_Flow.txt",
+    "Git_SSH_Workflow.txt",
 ]
 OUT = ROOT / "js" / "learning-content.js"
 
@@ -28,7 +29,9 @@ def main() -> int:
     missing: list[str] = []
 
     for name in FILES:
-        path = ROOT / name
+        path = ROOT / "misc" / name
+        if not path.exists():
+            path = ROOT / name
         if not path.exists():
             missing.append(name)
             continue
