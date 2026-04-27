@@ -2,7 +2,7 @@
 
 An interactive map of my engineering toolkit — the languages, frameworks, tools, and architectural patterns I work with, each rated against full mastery rather than surface-level use.
 
-> **Live demo:** (https://christianjaymendez-w.netlify.app/)
+> **Live demo:** (https://christianjaymendezw.netlify.app/)
 
 ---
 
