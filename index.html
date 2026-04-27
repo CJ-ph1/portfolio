@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Tech Stack — Knowledge Journey Explorer</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <h1>My Tech Stack</h1>
+    <p>Knowledge Journey Explorer</p>
+  </div>
+
+  <div class="nav-section">Overview</div>
+  <button class="nav-btn active" data-view="dashboard">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Home
+  </button>
+
+  <div class="nav-section">Tools</div>
+  <button class="nav-btn" data-view="tools-db">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+    Databases &amp; Data
+  </button>
+  <button class="nav-btn" data-view="tools-api">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+    API &amp; Testing
+  </button>
+  <button class="nav-btn" data-view="tools-devops">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+    DevOps &amp; Infra
+  </button>
+  <button class="nav-btn" data-view="tools-vcs">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+    Version Control
+  </button>
+  <button class="nav-btn" data-view="tools-editors">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+    Editors &amp; Terminals
+  </button>
+  <button class="nav-btn" data-view="tools-ai">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg>
+    AI Assistants
+  </button>
+
+  <div class="nav-section">Tech Stack</div>
+  <button class="nav-btn" data-view="stack-lang">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+    Languages &amp; Runtime
+  </button>
+  <button class="nav-btn" data-view="stack-fw">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    Frameworks &amp; ORM
+  </button>
+  <button class="nav-btn" data-view="stack-db">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg>
+    Databases
+  </button>
+  <button class="nav-btn" data-view="stack-cache">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    Caching
+  </button>
+  <button class="nav-btn" data-view="stack-env">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+    Environments
+  </button>
+  <button class="nav-btn" data-view="stack-quality">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+    Code Quality
+  </button>
+  <button class="nav-btn" data-view="stack-cicd">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/><path d="M20.49 15A9 9 0 0 1 5.64 18.36L1 14"/></svg>
+    CI/CD
+  </button>
+
+  <div class="nav-section">Knowledge</div>
+  <button class="nav-btn" data-view="design">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+    System Design
+  </button>
+
+  <div class="nav-section">Learning</div>
+  <button class="nav-btn" data-view="learning-architecture">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/></svg>
+    Architecture Review
+  </button>
+  <button class="nav-btn" data-view="learning-glossary">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+    API Glossary
+  </button>
+  <button class="nav-btn" data-view="learning-python">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+    Python Integration
+  </button>
+  <button class="nav-btn" data-view="learning-full-flow">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+    Full Flow
+  </button>
+
+  <div class="nav-footer">
+    <span id="footer-summary">Loading&hellip;</span><br>
+    <span style="color:#60a5fa">Click any card to expand details</span>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ═══════════ Top toolbar (back / breadcrumb) ═══════════ -->
+  <div class="view-toolbar" id="view-toolbar">
+    <button id="back-btn" class="back-btn" type="button" onclick="goBack()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back
+    </button>
+    <span class="view-breadcrumb" id="view-breadcrumb"></span>
+  </div>
+
+  <!-- ═══════════ HOME / DASHBOARD ═══════════ -->
+  <div id="view-dashboard" class="view active home">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-avatar" aria-hidden="true">
+          <span>CJ</span>
+          <span class="hero-avatar-status" title="Open to collaboration"></span>
+        </div>
+        <div class="hero-text">
+          <div class="hero-eyebrow">
+            <span class="hero-dot"></span> Available for collaboration
+          </div>
+          <h1 class="hero-name">Christian Jay Mendez</h1>
+          <p class="hero-role">Python-First Backend Engineer &middot; Architect-minded &middot; Mentor</p>
+          <p class="hero-tagline">
+            I think about software architecturally before syntactically &mdash; bounded domains,
+            clean layers, and data flow that's easy to reason about. This site is my living
+            engineering portfolio and self-study tracker.
+          </p>
+          <div class="hero-chips">
+            <span class="hero-chip chip-primary">Python &middot; FastAPI &middot; SQLAlchemy</span>
+            <span class="hero-chip chip-mirror">Mirror stack: TS &middot; TSOA &middot; Prisma</span>
+            <span class="hero-chip chip-infra">Docker &middot; Linode &middot; Nginx</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:christian.mendez@easycom-intl.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Get in touch
+            </a>
+            <button class="btn btn-ghost" type="button" onclick="showView('tools-db')">
+              Explore the stack
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Currently Learning -->
+    <section class="home-section">
+      <div class="section-head">
+        <div>
+          <h3 class="section-title">Currently Learning</h3>
+          <p class="section-sub">A living list of what I'm actively studying this quarter &mdash; edit in <code>index.html</code>.</p>
+        </div>
+        <span class="section-pill">Q2 2026</span>
+      </div>
+      <div class="learning-grid">
+        <button class="learning-item" type="button" onclick="showView('learning-architecture')">
+          <div class="learning-head">
+            <strong>API Architecture Review</strong>
+            <span class="learning-stage stage-progress">Reading</span>
+          </div>
+          <p>Layered flow from Endpoint &rarr; Schema &rarr; Service &rarr; Repository &rarr; Model &rarr; Database. When each layer is needed and when it can be skipped.</p>
+          <span class="learning-cta">Open notes &rarr;</span>
+        </button>
+        <button class="learning-item" type="button" onclick="showView('learning-glossary')">
+          <div class="learning-head">
+            <strong>Professional API Glossary</strong>
+            <span class="learning-stage stage-progress">Reading</span>
+          </div>
+          <p>Framework-agnostic terminology across 11 areas: fundamentals, auth, databases, deployment, design patterns, security, performance.</p>
+          <span class="learning-cta">Open notes &rarr;</span>
+        </button>
+        <button class="learning-item" type="button" onclick="showView('learning-python')">
+          <div class="learning-head">
+            <strong>Python Integration</strong>
+            <span class="learning-stage stage-progress">Reading</span>
+          </div>
+          <p>The Python toolbelt for each API layer &mdash; FastAPI, Pydantic, SQLAlchemy, Alembic, pytest, Uvicorn, Celery, Redis, and more.</p>
+          <span class="learning-cta">Open notes &rarr;</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- At a glance stats -->
+    <section class="home-section">
+      <div class="section-head">
+        <h3 class="section-title">At a glance</h3>
+      </div>
+      <div class="stats-row stats-row-3">
+        <div class="stat-card stat-total"><div class="stat-num" id="stat-tools">0</div><div class="stat-label">Tools</div></div>
+        <div class="stat-card stat-pass"><div class="stat-num" id="stat-stack">0</div><div class="stat-label">Stack Items</div></div>
+        <div class="stat-card stat-partial"><div class="stat-num" id="stat-design">0</div><div class="stat-label">Design Patterns</div></div>
+      </div>
+    </section>
+
+    <!-- What's in the explorer -->
+    <section class="home-section">
+      <div class="section-head">
+        <h3 class="section-title">What's in this explorer</h3>
+      </div>
+      <div class="feature-grid">
+        <button class="feature-card feat-tools" type="button" onclick="showView('tools-db')">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h4>Tools</h4>
+          <p>Database clients, API tools, containers, editors, and AI assistants I reach for every day.</p>
+          <span class="feature-cta">Browse tools &rarr;</span>
+        </button>
+        <button class="feature-card feat-stack" type="button" onclick="showView('stack-lang')">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h4>Tech Stack</h4>
+          <p>Languages, frameworks, and infrastructure I build with. JS/TS mirror items live here too, marked with a <span class="mirror-badge" style="font-size:9px">MIRROR</span> badge.</p>
+          <span class="feature-cta">Browse stack &rarr;</span>
+        </button>
+        <button class="feature-card feat-design" type="button" onclick="showView('design')">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h4>System Design</h4>
+          <p>Architectural patterns and paradigms I understand and can actually apply &mdash; not just name-drop.</p>
+          <span class="feature-cta">Browse patterns &rarr;</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Average knowledge -->
+    <section class="home-section">
+      <div class="card">
+        <div class="section-head" style="margin-bottom:8px;">
+          <h3 class="section-title" style="margin:0;">Average knowledge by category</h3>
+        </div>
+        <div id="avg-rows" style="display:flex;flex-direction:column;gap:10px;margin-top:10px;"></div>
+      </div>
+    </section>
+
+    <!-- Quick Search -->
+    <section class="home-section">
+      <div class="card">
+        <div class="section-head" style="margin-bottom:8px;">
+          <h3 class="section-title" style="margin:0;">Quick search</h3>
+          <span class="section-sub" style="margin:0;">Across tools, stack, and design patterns.</span>
+        </div>
+        <div class="filter-bar">
+          <input type="text" id="global-search" class="search-input" placeholder="Search all tools, frameworks, and skills..." oninput="globalSearch(this.value)">
+        </div>
+        <div id="global-results" class="items-grid"></div>
+        <div id="global-empty" class="empty-state hidden">No matches found. Try a different search term.</div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ═══════════ TOOLS VIEWS ═══════════ -->
+  <div id="view-tools-db" class="view">
+    <h2>Databases &amp; Data Clients</h2>
+    <p class="subtitle">GUI clients and SaaS database platforms used for querying, browsing, and managing data.</p>
+    <div class="sub-section">
+      <h3>Database &amp; Data Clients</h3>
+      <div class="items-grid" id="grid-tools-db"></div>
+    </div>
+    <div class="sub-section">
+      <h3>SaaS Databases</h3>
+      <div class="items-grid" id="grid-tools-saas"></div>
+    </div>
+  </div>
+
+  <div id="view-tools-api" class="view">
+    <h2>API &amp; Testing Tools</h2>
+    <p class="subtitle">Clients and docs platforms for designing, testing, and documenting HTTP APIs.</p>
+    <div class="items-grid" id="grid-tools-api"></div>
+  </div>
+
+  <div id="view-tools-devops" class="view">
+    <h2>DevOps &amp; Infrastructure</h2>
+    <p class="subtitle">Containerization, cloud hosting, and deployment infrastructure.</p>
+    <div class="items-grid" id="grid-tools-devops"></div>
+  </div>
+
+  <div id="view-tools-vcs" class="view">
+    <h2>Version Control &amp; Collaboration</h2>
+    <p class="subtitle">Tools for managing source code and collaborating across teams.</p>
+    <div class="items-grid" id="grid-tools-vcs"></div>
+  </div>
+
+  <div id="view-tools-editors" class="view">
+    <h2>Editors &amp; Terminals</h2>
+    <p class="subtitle">Code editors, IDEs, and terminal environments used daily.</p>
+    <div class="items-grid" id="grid-tools-editors"></div>
+  </div>
+
+  <div id="view-tools-ai" class="view">
+    <h2>AI Assistants</h2>
+    <p class="subtitle">AI-powered tools for coding, automation, and knowledge work.</p>
+    <div class="items-grid" id="grid-tools-ai"></div>
+  </div>
+
+  <!-- ═══════════ STACK VIEWS ═══════════ -->
+  <div id="view-stack-lang" class="view">
+    <h2>Languages &amp; Runtime</h2>
+    <p class="subtitle">Primary programming languages and runtimes I write production code in.</p>
+    <div class="items-grid" id="grid-stack-lang"></div>
+  </div>
+
+  <div id="view-stack-fw" class="view">
+    <h2>Frameworks &amp; ORM</h2>
+    <p class="subtitle">Web frameworks, ORMs, and migration tooling I build with regularly.</p>
+    <div class="items-grid" id="grid-stack-fw"></div>
+  </div>
+
+  <div id="view-stack-db" class="view">
+    <h2>Databases</h2>
+    <p class="subtitle">Relational and document databases I design schemas against.</p>
+    <div class="items-grid" id="grid-stack-db"></div>
+  </div>
+
+  <div id="view-stack-cache" class="view">
+    <h2>Caching &amp; Data Layer</h2>
+    <p class="subtitle">In-memory stores for caching, queues, and pub/sub.</p>
+    <div class="items-grid" id="grid-stack-cache"></div>
+  </div>
+
+  <div id="view-stack-env" class="view">
+    <h2>Environments &amp; Package Managers</h2>
+    <p class="subtitle">Virtual environments, containerization, and dependency managers.</p>
+    <div class="items-grid" id="grid-stack-env"></div>
+  </div>
+
+  <div id="view-stack-quality" class="view">
+    <h2>Code Quality &amp; Tooling</h2>
+    <p class="subtitle">Linters, formatters, type checkers, and git hook frameworks.</p>
+    <div class="items-grid" id="grid-stack-quality"></div>
+  </div>
+
+  <div id="view-stack-cicd" class="view">
+    <h2>Version Control &amp; CI/CD</h2>
+    <p class="subtitle">Source control and automated build/test/deploy pipelines.</p>
+    <div class="items-grid" id="grid-stack-cicd"></div>
+  </div>
+
+  <!-- ═══════════ KNOWLEDGE VIEWS ═══════════ -->
+  <div id="view-design" class="view">
+    <h2>System Design Knowledge</h2>
+    <p class="subtitle">Architectural patterns and paradigms I understand and can apply.</p>
+    <div class="items-grid" id="grid-design"></div>
+  </div>
+
+  <!-- ═══════════ LEARNING VIEWS ═══════════ -->
+  <div id="view-learning-architecture" class="view">
+    <h2>Architecture Review</h2>
+    <p class="subtitle">Layered API architecture &mdash; from endpoint to database. Source: <code>Architecture_Review.txt</code></p>
+    <div class="learning-doc" id="doc-learning-architecture" data-src="Architecture_Review.txt">Loading&hellip;</div>
+  </div>
+
+  <div id="view-learning-glossary" class="view">
+    <h2>Professional API Glossary</h2>
+    <p class="subtitle">Framework-agnostic API terminology. Source: <code>Professional_API_Glossary.txt</code></p>
+    <div class="learning-doc" id="doc-learning-glossary" data-src="Professional_API_Glossary.txt">Loading&hellip;</div>
+  </div>
+
+  <div id="view-learning-python" class="view">
+    <h2>Python Integration</h2>
+    <p class="subtitle">Python tools and libraries per API layer. Source: <code>Python Integration.txt</code></p>
+    <div class="learning-doc" id="doc-learning-python" data-src="Python Integration.txt">Loading&hellip;</div>
+  </div>
+
+  <div id="view-learning-full-flow" class="view">
+    <h2>End-to-End: User Places an Order</h2>
+    <p class="subtitle">How the architecture, glossary, and Python integration all connect in one real scenario.</p>
+
+    <!-- ─── Architecture SVG ─── -->
+    <figure class="flow-figure">
+      <figcaption class="flow-caption">Architecture · follow the pulsing packet &rarr;</figcaption>
+      <svg class="flow-svg flow-svg-arch" viewBox="0 0 1000 860" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="End-to-end architecture diagram">
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" fill="#64748b"/>
+          </marker>
+          <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" fill="#22c55e"/>
+          </marker>
+          <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" fill="#a855f7"/>
+          </marker>
+          <linearGradient id="appBg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"  stop-color="#3b82f6" stop-opacity="0.10"/>
+            <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.04"/>
+          </linearGradient>
+          <radialGradient id="packetGrad">
+            <stop offset="0%"   stop-color="#bfdbfe"/>
+            <stop offset="60%"  stop-color="#60a5fa"/>
+            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+
+        <!-- ═══ BROWSER ═══ -->
+        <g>
+          <rect x="380" y="20" width="240" height="60" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+          <g transform="translate(402,38)" fill="none" stroke="#60a5fa" stroke-width="2">
+            <rect x="0" y="0" width="24" height="16" rx="2"/>
+            <line x1="8" y1="20" x2="16" y2="20"/>
+            <line x1="12" y1="16" x2="12" y2="20"/>
+          </g>
+          <text x="440" y="46" font-size="14" font-weight="700" fill="#f1f5f9">Browser</text>
+          <text x="440" y="65" font-size="11" fill="#94a3b8">User clicks "Place Order"</text>
+        </g>
+
+        <!-- Step 1 arrow -->
+        <line x1="500" y1="80" x2="500" y2="118" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+        <g>
+          <circle cx="540" cy="99" r="13" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+          <text x="540" y="103" text-anchor="middle" font-size="12" font-weight="800" fill="#60a5fa">1</text>
+        </g>
+        <text x="560" y="103" font-size="11" fill="#94a3b8">HTTPS · POST /orders · Bearer &lt;jwt&gt;</text>
+
+        <!-- ═══ NGINX ═══ -->
+        <g>
+          <rect x="380" y="120" width="240" height="60" rx="12" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+          <g transform="translate(404,137)" fill="none" stroke="#94a3b8" stroke-width="2">
+            <path d="M12 0 L22 4 Q22 16 12 22 Q2 16 2 4 Z"/>
+          </g>
+          <text x="440" y="146" font-size="14" font-weight="700" fill="#f1f5f9">Nginx</text>
+          <text x="440" y="165" font-size="11" fill="#94a3b8">Reverse proxy · TLS termination</text>
+        </g>
+
+        <!-- Step 2 arrow -->
+        <line x1="500" y1="180" x2="500" y2="218" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+        <g>
+          <circle cx="540" cy="199" r="13" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+          <text x="540" y="203" text-anchor="middle" font-size="12" font-weight="800" fill="#60a5fa">2</text>
+        </g>
+        <text x="560" y="203" font-size="11" fill="#94a3b8">proxy_pass · plain HTTP upstream</text>
+
+        <!-- ═══ UVICORN ═══ -->
+        <g>
+          <rect x="380" y="220" width="240" height="60" rx="12" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+          <g transform="translate(404,240)" fill="none" stroke="#94a3b8" stroke-width="2">
+            <polyline points="0,0 8,6 0,12"/>
+            <polyline points="16,12 24,6 16,0"/>
+          </g>
+          <text x="440" y="246" font-size="14" font-weight="700" fill="#f1f5f9">Uvicorn</text>
+          <text x="440" y="265" font-size="11" fill="#94a3b8">ASGI server · async dispatch</text>
+        </g>
+
+        <!-- Step 3 arrow into app container -->
+        <line x1="500" y1="280" x2="500" y2="318" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+        <g>
+          <circle cx="540" cy="299" r="13" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+          <text x="540" y="303" text-anchor="middle" font-size="12" font-weight="800" fill="#60a5fa">3</text>
+        </g>
+        <text x="560" y="303" font-size="11" fill="#94a3b8">ASGI scope · receive / send</text>
+
+        <!-- ═══ FASTAPI CONTAINER ═══ -->
+        <rect x="60" y="320" width="640" height="470" rx="16" fill="url(#appBg)" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+        <rect x="60" y="320" width="640" height="38" rx="16" fill="#3b82f6" fill-opacity="0.15" stroke="none"/>
+        <text x="80" y="344" font-size="13" font-weight="800" fill="#93c5fd" letter-spacing="0.3">FastAPI App &middot; 6 layers in sequence</text>
+
+        <!-- Layer 1: Middleware -->
+        <g>
+          <rect x="80" y="375" width="600" height="56" rx="10" fill="#0f172a" stroke="#eab308" stroke-opacity="0.4" stroke-width="1.5"/>
+          <text x="96" y="397" font-size="10" font-weight="800" fill="#eab308" letter-spacing="0.6">MIDDLEWARE</text>
+          <!-- pills -->
+          <g transform="translate(96,408)">
+            <rect x="0"   y="0" width="58" height="20" rx="10" fill="#eab30822" stroke="#eab30855"/><text x="29" y="14" text-anchor="middle" font-size="10" fill="#fde047">CORS</text>
+            <rect x="66"  y="0" width="72" height="20" rx="10" fill="#eab30822" stroke="#eab30855"/><text x="102" y="14" text-anchor="middle" font-size="10" fill="#fde047">JWT Auth</text>
+            <rect x="146" y="0" width="90" height="20" rx="10" fill="#eab30822" stroke="#eab30855"/><text x="191" y="14" text-anchor="middle" font-size="10" fill="#fde047">Rate Limit</text>
+            <rect x="244" y="0" width="76" height="20" rx="10" fill="#eab30822" stroke="#eab30855"/><text x="282" y="14" text-anchor="middle" font-size="10" fill="#fde047">Logging</text>
+          </g>
+          <text x="666" y="410" text-anchor="end" font-size="10" fill="#94a3b8">Starlette / SlowAPI</text>
+        </g>
+
+        <!-- step 4 -->
+        <line x1="380" y1="431" x2="380" y2="452" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <circle cx="410" cy="441" r="10" fill="#0f172a" stroke="#60a5fa" stroke-width="1.5"/>
+        <text x="410" y="445" text-anchor="middle" font-size="10" font-weight="800" fill="#60a5fa">4</text>
+
+        <!-- Layer 2: Endpoint -->
+        <g>
+          <rect x="80" y="455" width="600" height="42" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1.5"/>
+          <text x="96" y="474" font-size="10" font-weight="800" fill="#60a5fa" letter-spacing="0.6">ENDPOINT</text>
+          <text x="180" y="482" font-family="'Consolas', monospace" font-size="12" fill="#67e8f9">@router.post("/orders")</text>
+          <text x="666" y="482" text-anchor="end" font-size="10" fill="#94a3b8">FastAPI APIRouter</text>
+        </g>
+
+        <!-- step 5 -->
+        <line x1="380" y1="497" x2="380" y2="518" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <circle cx="410" cy="507" r="10" fill="#0f172a" stroke="#60a5fa" stroke-width="1.5"/>
+        <text x="410" y="511" text-anchor="middle" font-size="10" font-weight="800" fill="#60a5fa">5</text>
+
+        <!-- Layer 3: Schema -->
+        <g>
+          <rect x="80" y="521" width="600" height="42" rx="10" fill="#0f172a" stroke="#06b6d4" stroke-opacity="0.4" stroke-width="1.5"/>
+          <text x="96" y="540" font-size="10" font-weight="800" fill="#22d3ee" letter-spacing="0.6">SCHEMA</text>
+          <text x="170" y="548" font-family="'Consolas', monospace" font-size="12" fill="#67e8f9">OrderCreate → OrderResponse</text>
+          <text x="666" y="548" text-anchor="end" font-size="10" fill="#94a3b8">Pydantic</text>
+        </g>
+
+        <!-- step 6 -->
+        <line x1="380" y1="563" x2="380" y2="584" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <circle cx="410" cy="573" r="10" fill="#0f172a" stroke="#60a5fa" stroke-width="1.5"/>
+        <text x="410" y="577" text-anchor="middle" font-size="10" font-weight="800" fill="#60a5fa">6</text>
+
+        <!-- Layer 4: Service -->
+        <g>
+          <rect x="80" y="587" width="600" height="42" rx="10" fill="#0f172a" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1.5"/>
+          <text x="96" y="606" font-size="10" font-weight="800" fill="#c084fc" letter-spacing="0.6">SERVICE</text>
+          <text x="170" y="614" font-size="12" fill="#cbd5e1">check_stock &middot; calc_total &middot; apply_promos</text>
+          <text x="666" y="614" text-anchor="end" font-size="10" fill="#94a3b8">plain Python</text>
+        </g>
+
+        <!-- step 7 -->
+        <line x1="380" y1="629" x2="380" y2="650" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <circle cx="410" cy="639" r="10" fill="#0f172a" stroke="#60a5fa" stroke-width="1.5"/>
+        <text x="410" y="643" text-anchor="middle" font-size="10" font-weight="800" fill="#60a5fa">7</text>
+
+        <!-- Layer 5: Repository -->
+        <g>
+          <rect x="80" y="653" width="600" height="42" rx="10" fill="#0f172a" stroke="#22c55e" stroke-opacity="0.4" stroke-width="1.5"/>
+          <text x="96" y="672" font-size="10" font-weight="800" fill="#4ade80" letter-spacing="0.6">REPOSITORY</text>
+          <text x="190" y="680" font-size="12" fill="#cbd5e1">OrderRepo &middot; ProductRepo (CRUD boundary)</text>
+          <text x="666" y="680" text-anchor="end" font-size="10" fill="#94a3b8">SQLAlchemy Session</text>
+        </g>
+
+        <!-- step 8 -->
+        <line x1="380" y1="695" x2="380" y2="716" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <circle cx="410" cy="705" r="10" fill="#0f172a" stroke="#60a5fa" stroke-width="1.5"/>
+        <text x="410" y="709" text-anchor="middle" font-size="10" font-weight="800" fill="#60a5fa">8</text>
+
+        <!-- Layer 6: Model -->
+        <g>
+          <rect x="80" y="719" width="600" height="42" rx="10" fill="#0f172a" stroke="#fb923c" stroke-opacity="0.4" stroke-width="1.5"/>
+          <text x="96" y="738" font-size="10" font-weight="800" fill="#fb923c" letter-spacing="0.6">MODEL</text>
+          <text x="150" y="746" font-size="12" fill="#cbd5e1">Order &middot; OrderItem &middot; Product (table classes)</text>
+          <text x="666" y="746" text-anchor="end" font-size="10" fill="#94a3b8">SQLAlchemy + Alembic</text>
+        </g>
+
+        <!-- ═══ SUPPORTING SERVICES (right side) ═══ -->
+        <!-- Redis -->
+        <g>
+          <rect x="770" y="375" width="200" height="60" rx="12" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+          <g transform="translate(790,397)" fill="#c084fc" stroke="none">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </g>
+          <text x="820" y="402" font-size="14" font-weight="700" fill="#f1f5f9">Redis</text>
+          <text x="820" y="420" font-size="11" fill="#94a3b8">Cache · rate counters</text>
+        </g>
+        <!-- curve: middleware → redis (rate limit) -->
+        <path d="M 680 405 Q 725 405 770 405" stroke="#a855f7" stroke-width="1.5" fill="none" stroke-dasharray="4 3" marker-end="url(#arrow-purple)"/>
+        <!-- curve: service → redis (cache) -->
+        <path d="M 680 605 Q 725 520 770 425" stroke="#a855f7" stroke-width="1.5" fill="none" stroke-dasharray="4 3" marker-end="url(#arrow-purple)"/>
+
+        <!-- PostgreSQL -->
+        <g>
+          <rect x="770" y="455" width="200" height="70" rx="12" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+          <g transform="translate(790,478)" fill="none" stroke="#22d3ee" stroke-width="2">
+            <ellipse cx="12" cy="3" rx="10" ry="3"/>
+            <path d="M2 3v16c0 1.66 4.48 3 10 3s10-1.34 10-3V3"/>
+            <path d="M2 11c0 1.66 4.48 3 10 3s10-1.34 10-3"/>
+          </g>
+          <text x="820" y="484" font-size="14" font-weight="700" fill="#f1f5f9">PostgreSQL</text>
+          <text x="820" y="502" font-size="11" fill="#94a3b8">Source of truth · ACID</text>
+          <text x="820" y="518" font-size="11" fill="#94a3b8">Orders · Products · Users</text>
+        </g>
+        <!-- arrow: Model → Postgres -->
+        <path d="M 680 740 Q 730 740 760 600 Q 765 540 770 490" stroke="#06b6d4" stroke-width="1.5" fill="none" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+
+        <!-- Celery Worker -->
+        <g>
+          <rect x="770" y="545" width="200" height="60" rx="12" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+          <g transform="translate(790,567)" fill="none" stroke="#4ade80" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12,6 12,12 16,14"/>
+          </g>
+          <text x="820" y="570" font-size="14" font-weight="700" fill="#f1f5f9">Celery Worker</text>
+          <text x="820" y="588" font-size="11" fill="#94a3b8">Background · email, webhooks</text>
+        </g>
+        <!-- curve: service → celery -->
+        <path d="M 680 610 Q 720 610 770 580" stroke="#22c55e" stroke-width="1.5" fill="none" stroke-dasharray="4 3" marker-end="url(#arrow-green)"/>
+
+        <!-- Observability band -->
+        <g>
+          <rect x="770" y="625" width="200" height="90" rx="12" fill="#1e293b" stroke="#eab308" stroke-width="2"/>
+          <text x="820" y="648" font-size="13" font-weight="700" fill="#f1f5f9">Observability</text>
+          <text x="820" y="666" font-size="10" fill="#fde047">Prometheus · Grafana</text>
+          <text x="820" y="682" font-size="10" fill="#fde047">Sentry · OpenTelemetry</text>
+          <text x="820" y="702" font-size="10" fill="#94a3b8">every layer emits</text>
+        </g>
+        <!-- thin connecting lines from each app layer to observability (one combined curve) -->
+        <path d="M 680 670 Q 730 670 770 670" stroke="#eab308" stroke-width="1" fill="none" stroke-dasharray="2 4" opacity="0.5"/>
+
+        <!-- ═══ RESPONSE ARROW BACK UP ═══ -->
+        <path d="M 720 740 Q 930 740 930 60 Q 930 50 620 50" stroke="#22c55e" stroke-width="1.5" fill="none" stroke-dasharray="6 4" marker-end="url(#arrow-green)"/>
+        <rect x="860" y="400" width="90" height="22" rx="11" fill="#0f172a" stroke="#22c55e" stroke-width="1.5"/>
+        <text x="905" y="415" text-anchor="middle" font-size="10" font-weight="800" fill="#4ade80">201 Created</text>
+
+        <!-- ═══ ANIMATED REQUEST PACKET ═══ -->
+        <circle r="8" fill="url(#packetGrad)" opacity="0.95">
+          <animateMotion dur="9s" repeatCount="indefinite" rotate="auto"
+            path="M 500 50 L 500 150 L 500 250 L 500 400 L 500 475 L 500 542 L 500 608 L 500 674 L 500 740"/>
+        </circle>
+
+      </svg>
+    </figure>
+
+    <!-- ─── Sequence Diagram ─── -->
+    <figure class="flow-figure">
+      <figcaption class="flow-caption">Sequence · time flows downward</figcaption>
+      <svg class="flow-svg flow-svg-seq" viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sequence diagram">
+        <defs>
+          <marker id="seqArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" fill="#60a5fa"/>
+          </marker>
+          <marker id="seqArrowBack" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" fill="#22c55e"/>
+          </marker>
+        </defs>
+
+        <!-- Lane headers -->
+        <g font-size="12" font-weight="700" fill="#f1f5f9" text-anchor="middle">
+          <rect x="40"  y="10" width="120" height="34" rx="8" fill="#3b82f622" stroke="#3b82f6"/>
+          <text x="100" y="32">Browser</text>
+          <rect x="200" y="10" width="120" height="34" rx="8" fill="#64748b22" stroke="#64748b"/>
+          <text x="260" y="32">Nginx + Uvicorn</text>
+          <rect x="360" y="10" width="200" height="34" rx="8" fill="#3b82f622" stroke="#60a5fa"/>
+          <text x="460" y="32">FastAPI App (6 layers)</text>
+          <rect x="600" y="10" width="120" height="34" rx="8" fill="#06b6d422" stroke="#06b6d4"/>
+          <text x="660" y="32">PostgreSQL</text>
+          <rect x="760" y="10" width="100" height="34" rx="8" fill="#a855f722" stroke="#a855f7"/>
+          <text x="810" y="32">Redis</text>
+          <rect x="880" y="10" width="100" height="34" rx="8" fill="#22c55e22" stroke="#22c55e"/>
+          <text x="930" y="32">Celery</text>
+        </g>
+
+        <!-- Lifelines (dashed verticals) -->
+        <g stroke="#334155" stroke-width="1" stroke-dasharray="3 4">
+          <line x1="100" y1="50"  x2="100" y2="510"/>
+          <line x1="260" y1="50"  x2="260" y2="510"/>
+          <line x1="460" y1="50"  x2="460" y2="510"/>
+          <line x1="660" y1="50"  x2="660" y2="510"/>
+          <line x1="810" y1="50"  x2="810" y2="510"/>
+          <line x1="930" y1="50"  x2="930" y2="510"/>
+        </g>
+
+        <!-- Messages (request path in blue, response in green) -->
+        <g font-size="10.5" fill="#cbd5e1">
+          <!-- 1 Browser → Nginx -->
+          <line x1="100" y1="80"  x2="256" y2="80"  stroke="#60a5fa" stroke-width="1.8" marker-end="url(#seqArrow)"/>
+          <text x="178" y="74" text-anchor="middle" fill="#60a5fa">HTTPS POST /orders + JWT</text>
+
+          <!-- 2 Nginx → FastAPI -->
+          <line x1="260" y1="110" x2="456" y2="110" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#seqArrow)"/>
+          <text x="358" y="104" text-anchor="middle" fill="#60a5fa">proxy_pass · plain HTTP</text>
+
+          <!-- 3 Middleware checks (FastAPI self-loop) -->
+          <path d="M 460 140 q 40 0 40 18 q 0 18 -40 18" stroke="#eab308" fill="none" stroke-width="1.5" marker-end="url(#seqArrow)"/>
+          <text x="530" y="165" fill="#eab308">Middleware: CORS, JWT, rate limit</text>
+
+          <!-- 3b Middleware → Redis (rate counter) -->
+          <line x1="460" y1="190" x2="806" y2="190" stroke="#a855f7" stroke-width="1.5" marker-end="url(#seqArrow)"/>
+          <text x="633" y="184" text-anchor="middle" fill="#a855f7">INCR rate:user:42</text>
+
+          <!-- 4 Pydantic (self) -->
+          <path d="M 460 220 q 40 0 40 18 q 0 18 -40 18" stroke="#22d3ee" fill="none" stroke-width="1.5" marker-end="url(#seqArrow)"/>
+          <text x="530" y="246" fill="#22d3ee">Pydantic validate OrderCreate</text>
+
+          <!-- 5 Service → Redis (cache lookup) -->
+          <line x1="460" y1="275" x2="806" y2="275" stroke="#a855f7" stroke-width="1.5" marker-end="url(#seqArrow)"/>
+          <text x="633" y="269" text-anchor="middle" fill="#a855f7">GET product:sku → hit</text>
+
+          <!-- 6 Service → Repository → DB (nested) -->
+          <line x1="460" y1="310" x2="656" y2="310" stroke="#22c55e" stroke-width="1.5" marker-end="url(#seqArrow)"/>
+          <text x="558" y="304" text-anchor="middle" fill="#22c55e">Repository: INSERT Order (transaction)</text>
+
+          <line x1="656" y1="340" x2="464" y2="340" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#seqArrowBack)"/>
+          <text x="558" y="334" text-anchor="middle" fill="#06b6d4">ORM returns Order model</text>
+
+          <!-- 7 Service → Celery (enqueue email) -->
+          <line x1="460" y1="375" x2="926" y2="375" stroke="#22c55e" stroke-width="1.5" marker-end="url(#seqArrow)"/>
+          <text x="693" y="369" text-anchor="middle" fill="#22c55e">enqueue send_order_email task</text>
+
+          <!-- 8 FastAPI → Nginx (response) -->
+          <line x1="456" y1="420" x2="264" y2="420" stroke="#22c55e" stroke-width="1.8" stroke-dasharray="5 3" marker-end="url(#seqArrowBack)"/>
+          <text x="358" y="414" text-anchor="middle" fill="#22c55e">201 + OrderResponse JSON</text>
+
+          <!-- 9 Nginx → Browser -->
+          <line x1="260" y1="455" x2="104" y2="455" stroke="#22c55e" stroke-width="1.8" stroke-dasharray="5 3" marker-end="url(#seqArrowBack)"/>
+          <text x="182" y="449" text-anchor="middle" fill="#22c55e">HTTPS response</text>
+
+          <!-- 10 Celery async email (self-loop later) -->
+          <path d="M 930 485 q 30 0 30 12 q 0 12 -30 12" stroke="#4ade80" fill="none" stroke-width="1.5" marker-end="url(#seqArrow)"/>
+          <text x="820" y="500" text-anchor="end" fill="#4ade80">worker renders + sends email (async)</text>
+        </g>
+      </svg>
+    </figure>
+
+    <!-- ─── Legend ─── -->
+    <div class="flow-legend">
+      <span><i class="sw sw-client"></i> Client</span>
+      <span><i class="sw sw-infra"></i> Infra</span>
+      <span><i class="sw sw-mw"></i> Middleware</span>
+      <span><i class="sw sw-endpoint"></i> Endpoint</span>
+      <span><i class="sw sw-schema"></i> Schema</span>
+      <span><i class="sw sw-service"></i> Service</span>
+      <span><i class="sw sw-repo"></i> Repository</span>
+      <span><i class="sw sw-model"></i> Model</span>
+      <span><i class="sw sw-db"></i> Database</span>
+      <span><i class="sw sw-cache"></i> Cache</span>
+      <span><i class="sw sw-worker"></i> Worker</span>
+      <span><i class="sw sw-obs"></i> Observability</span>
+      <span class="legend-dashed">&minus;&minus;&rarr; response path</span>
+    </div>
+
+    <!-- ─── Rendered notes from Full_Flow.txt ─── -->
+    <div class="learning-doc" id="doc-learning-full-flow" data-src="Full_Flow.txt">Loading&hellip;</div>
+  </div>
+
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/learning-content.js"></script>
+<script src="js/learning.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
