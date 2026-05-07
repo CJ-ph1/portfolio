@@ -73,22 +73,13 @@ function currentViewId() {
 //  Sub-nav (group → list of views) for the top navbar
 // ============================================================================
 const GROUP_TABS = {
-  tools: [
-    { id: 'tools-db',      label: 'Databases & Data' },
-    { id: 'tools-api',     label: 'API & Testing' },
-    { id: 'tools-devops',  label: 'DevOps & Infra' },
-    { id: 'tools-vcs',     label: 'Version Control' },
-    { id: 'tools-editors', label: 'Editors & Terminals' },
-    { id: 'tools-ai',      label: 'AI Assistants' },
-  ],
-  stack: [
-    { id: 'stack-lang',    label: 'Languages & Runtime' },
-    { id: 'stack-fw',      label: 'Frameworks & ORM' },
-    { id: 'stack-db',      label: 'Databases' },
-    { id: 'stack-cache',   label: 'Caching' },
-    { id: 'stack-env',     label: 'Environments' },
-    { id: 'stack-quality', label: 'Code Quality' },
-    { id: 'stack-cicd',    label: 'CI/CD' },
+  projects: [
+    { id: 'project-hr',       label: 'HR System' },
+    { id: 'project-truck',    label: 'Truck Slot' },
+    { id: 'project-shipper',  label: 'Shipper BFF' },
+    { id: 'project-realtime', label: 'Real-Time Chat' },
+    { id: 'project-pos',      label: 'POS' },
+    { id: 'project-retail',   label: 'Retail OMS' },
   ],
   notes: [
     { id: 'learning-architecture', label: 'Architecture Review' },
@@ -136,7 +127,12 @@ function syncTopNav(activeViewId) {
   if (direct) { direct.classList.add('active'); return; }
   const group = groupOf(activeViewId);
   if (group) {
-    const groupBtn = document.querySelector(`.nav-link[data-group="${group}"]`);
+    // Match either a `data-group` link or a `data-view` link whose value
+    // equals the group name (e.g. nav-link[data-view="projects"] owns the
+    // "projects" group's project-* detail views).
+    const groupBtn =
+      document.querySelector(`.nav-link[data-group="${group}"]`) ||
+      document.querySelector(`.nav-link[data-view="${group}"]`);
     if (groupBtn) groupBtn.classList.add('active');
   }
 }
@@ -291,3 +287,4 @@ function initAvatar() {
 }
 
 document.addEventListener('DOMContentLoaded', init);
+

@@ -16,10 +16,9 @@
     </button>
 
     <nav class="primary-nav" aria-label="Primary">
-      <button class="nav-link active" data-view="dashboard">Bio</button>
-      <button class="nav-link" data-group="tools">Tools</button>
-      <button class="nav-link" data-group="stack">Tech Stack</button>
-      <button class="nav-link" data-view="design">System Design</button>
+      <button class="nav-link active" data-view="dashboard">Home</button>
+      <button class="nav-link" data-view="projects">Projects</button>
+      <button class="nav-link" data-view="skills">Skills</button>
       <button class="nav-link" data-group="notes">Notes</button>
     </nav>
 
@@ -63,12 +62,8 @@
           <div class="hero-avatar" aria-hidden="true">
             <img class="hero-avatar-img is-missing" alt="Christian Jay Mendez">
             <span class="hero-avatar-fallback">CJ</span>
-            <span class="hero-avatar-badge" title="Open to collaboration">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </span>
           </div>
           <h1 class="hero-name">Christian Jay Mendez</h1>
-          <p class="hero-pronouns">(he/him)</p>
           <p class="hero-role">Python-First Backend Engineer</p>
           <p class="hero-affil">Architect-minded · Mentor</p>
           <div class="hero-socials">
@@ -97,7 +92,7 @@
               I'm a Python-first backend engineer who thinks about software <strong>architecturally before syntactically</strong> &mdash; bounded domains, clean layers, and data flow that's easy to reason about. My primary stack is FastAPI + SQLAlchemy + Alembic, deployed behind Nginx on Linode VPS infrastructure.
             </p>
             <p class="block-prose">
-              Alongside it I maintain a parallel JS/TS <em>mirror stack</em> for mentoring &mdash; each Python tool maps one-to-one to its TS counterpart, so interns can transfer concepts cleanly between the two.
+              I also mentor junior engineers on a parallel TypeScript stack I built as a one-to-one mirror of my Python practices &mdash; <strong>TSOA</strong> for FastAPI's auto-Swagger, <strong>Prisma</strong> for Alembic-style migrations, matching lint and pre-commit tooling. Beyond the code, I walk them through <strong>Git workflows</strong> and the production lifecycle: <strong>Linode</strong>, <strong>Nginx</strong>, <strong>SSH keys</strong>, and <strong>least-privilege Linux users</strong> &mdash; so by their first deploy they understand both how the request reaches the app and who's allowed on the box.
             </p>
             <a class="cta-btn" href="mailto:christian.mendez@easycom-intl.com">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -108,31 +103,31 @@
           <div class="snapshot-block">
             <div class="block-head">
               <span class="block-icon block-icon-indigo">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7l10-5 10 5-10 5L2 7z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg>
               </span>
-              <h2 class="block-title">Stack Snapshot</h2>
+              <h2 class="block-title">Roles I've Played</h2>
             </div>
             <div class="snapshot-cards">
-              <button class="snapshot-card" type="button" onclick="showView('stack-fw')">
+              <button class="snapshot-card" type="button" onclick="showView('project-hr')">
                 <span class="snap-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/></svg>
                 </span>
-                <h3 class="snap-title">Backend</h3>
-                <p class="snap-sub">FastAPI · SQLAlchemy · Alembic</p>
+                <h3 class="snap-title">Architect &amp; Mentor</h3>
+                <p class="snap-sub">Led 6 interns rewriting an HR backend — TS + Prisma + TiDB.</p>
               </button>
-              <button class="snapshot-card" type="button" onclick="showView('stack-lang')">
+              <button class="snapshot-card" type="button" onclick="showView('project-realtime')">
                 <span class="snap-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
                 </span>
-                <h3 class="snap-title">Mirror Stack</h3>
-                <p class="snap-sub">TypeScript · TSOA · Prisma</p>
+                <h3 class="snap-title">Feature Surgeon</h3>
+                <p class="snap-sub">Targeted fixes on a real-time chat platform — i18n + race condition.</p>
               </button>
-              <button class="snapshot-card" type="button" onclick="showView('tools-devops')">
+              <button class="snapshot-card" type="button" onclick="showView('project-truck')">
                 <span class="snap-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6"/><path d="M12 22v-6"/><path d="M4.93 4.93l4.24 4.24"/><path d="M14.83 14.83l4.24 4.24"/><path d="M2 12h6"/><path d="M16 12h6"/><path d="M4.93 19.07l4.24-4.24"/><path d="M14.83 9.17l4.24-4.24"/></svg>
                 </span>
-                <h3 class="snap-title">Infra</h3>
-                <p class="snap-sub">Docker · Linode · Nginx</p>
+                <h3 class="snap-title">End-to-End Owner</h3>
+                <p class="snap-sub">Sole backend on long-running client engagements — schema to deploy.</p>
               </button>
             </div>
           </div>
@@ -140,168 +135,248 @@
       </div>
     </section>
 
-    <!-- Mirror Stack Section -->
-    <section class="home-section">
-      <div class="section-head">
-        <div>
-          <h3 class="section-title">The Mirror Stack &mdash; A Mentoring Philosophy</h3>
-          <p class="section-sub">Each tool on my Python side maps one-to-one to its JS/TS counterpart. When interns learn one side, the concepts transfer cleanly to the other.</p>
-        </div>
-      </div>
-      <div class="mirror-table-wrap">
-        <table class="mirror-table">
-          <thead>
-            <tr><th>Primary (Python)</th><th></th><th>Mirror (JS/TS)</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>FastAPI</td><td class="mt-arrow">↔</td><td><strong>TSOA</strong> <span class="mt-note">decorator-based auto-OpenAPI</span></td></tr>
-            <tr><td>SQLAlchemy + Alembic</td><td class="mt-arrow">↔</td><td><strong>Prisma</strong></td></tr>
-            <tr><td>FastAPI <code>Depends()</code></td><td class="mt-arrow">↔</td><td><strong>Tsyringe</strong></td></tr>
-            <tr><td>Ruff</td><td class="mt-arrow">↔</td><td><strong>ESLint</strong></td></tr>
-            <tr><td>Pre-commit</td><td class="mt-arrow">↔</td><td><strong>Husky</strong></td></tr>
-            <tr><td>Pydantic typing</td><td class="mt-arrow">↔</td><td><strong>TypeScript</strong></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- Recent Notes -->
-    <section class="home-section">
-      <div class="section-head">
-        <div>
-          <h3 class="section-title">Recent Notes</h3>
-          <p class="section-sub">Living notes I keep as I learn &mdash; updated as I read.</p>
-        </div>
-        <span class="section-pill">Q2 2026</span>
-      </div>
-      <div class="notes-grid">
-        <button class="note-card" type="button" onclick="showView('learning-architecture')">
-          <span class="note-tag">Architecture</span>
-          <h4>API Architecture Review</h4>
-          <p>Layered flow from Endpoint → Schema → Service → Repository → Model → Database. When each layer is needed and when it can be skipped.</p>
-          <span class="note-cta">Read note →</span>
-        </button>
-        <button class="note-card" type="button" onclick="showView('learning-glossary')">
-          <span class="note-tag">Reference</span>
-          <h4>Professional API Glossary</h4>
-          <p>Framework-agnostic terminology across 11 areas: fundamentals, auth, databases, deployment, design patterns, security, performance.</p>
-          <span class="note-cta">Read note →</span>
-        </button>
-        <button class="note-card" type="button" onclick="showView('learning-python')">
-          <span class="note-tag">Python</span>
-          <h4>Python Integration</h4>
-          <p>The Python toolbelt for each API layer — FastAPI, Pydantic, SQLAlchemy, Alembic, pytest, Uvicorn, Celery, Redis, and more.</p>
-          <span class="note-cta">Read note →</span>
-        </button>
-        <button class="note-card" type="button" onclick="showView('learning-full-flow')">
-          <span class="note-tag">Walkthrough</span>
-          <h4>End-to-End: Place an Order</h4>
-          <p>How architecture, glossary, and Python integration all connect in one real scenario — with a full SVG architecture diagram.</p>
-          <span class="note-cta">Read note →</span>
-        </button>
-        <button class="note-card" type="button" onclick="showView('learning-git-ssh')">
-          <span class="note-tag">Workflow</span>
-          <h4>Git &amp; SSH Workflow</h4>
-          <p>Day-to-day commands for wiring a local repo to a remote host over SSH — auth, credential helpers, identity, remotes.</p>
-          <span class="note-cta">Read note →</span>
-        </button>
-      </div>
-    </section>
-
   </div>
 
-  <!-- ═══════════ TOOLS VIEWS ═══════════ -->
-  <div id="view-tools-db" class="view">
-    <h2>Databases &amp; Data Clients</h2>
-    <p class="subtitle">GUI clients and SaaS database platforms used for querying, browsing, and managing data.</p>
-    <div class="sub-section">
-      <h3>Database &amp; Data Clients</h3>
-      <div class="items-grid" id="grid-tools-db"></div>
-    </div>
-    <div class="sub-section">
-      <h3>SaaS Databases</h3>
-      <div class="items-grid" id="grid-tools-saas"></div>
+  <!-- ═══════════ PROJECTS INDEX ═══════════ -->
+  <div id="view-projects" class="view">
+    <h2>Projects</h2>
+    <p class="subtitle">Six engagements I've shipped &mdash; from architecting a 17-module rewrite to owning client backends end-to-end.</p>
+    <div class="projects-grid">
+
+      <button class="project-card" type="button" onclick="showView('project-hr')">
+        <span class="project-role">Architect &amp; Tech Lead · Mentor of 6 Interns</span>
+        <h4>HR Information System</h4>
+        <p>17-module modular monolith on TypeScript + TSOA + Prisma + TiDB Cloud, with architectural fitness tests gated by Husky.</p>
+        <div class="project-stack">
+          <span class="stack-chip">TypeScript</span><span class="stack-chip">Prisma</span><span class="stack-chip">TiDB</span><span class="stack-chip">Socket.IO</span>
+        </div>
+      </button>
+
+      <button class="project-card" type="button" onclick="showView('project-truck')">
+        <span class="project-role">Sole Backend Owner</span>
+        <h4>Truck Delivery Slot Reservation</h4>
+        <p>Async FastAPI service with dual auth (JWT + scoped, hashed API keys), full ownership of schema, migrations, and delivery.</p>
+        <div class="project-stack">
+          <span class="stack-chip">FastAPI</span><span class="stack-chip">PostgreSQL</span><span class="stack-chip">Alembic</span><span class="stack-chip">Docker</span>
+        </div>
+      </button>
+
+      <button class="project-card" type="button" onclick="showView('project-shipper')">
+        <span class="project-role">Sole Backend Owner</span>
+        <h4>Shipper Visibility Portal (BFF)</h4>
+        <p>Multi-tenant BFF over external TMS + WMS systems. Tenant isolation enforced at the query layer with composite indexes per shipper.</p>
+        <div class="project-stack">
+          <span class="stack-chip">FastAPI</span><span class="stack-chip">PostgreSQL</span><span class="stack-chip">SQLAlchemy 2.0</span><span class="stack-chip">JWT</span>
+        </div>
+      </button>
+
+      <button class="project-card" type="button" onclick="showView('project-realtime')">
+        <span class="project-role">Feature Engineer</span>
+        <h4>Real-Time Multilingual Chat</h4>
+        <p>Joined an established Node.js + Socket.IO platform. Shipped Vietnamese localization end-to-end and fixed a notification race with atomic Mongo operators.</p>
+        <div class="project-stack">
+          <span class="stack-chip">Node.js</span><span class="stack-chip">Socket.IO</span><span class="stack-chip">MongoDB</span><span class="stack-chip">Redis</span>
+        </div>
+      </button>
+
+      <button class="project-card" type="button" onclick="showView('project-pos')">
+        <span class="project-role">Backend Developer</span>
+        <h4>POS &amp; Cash Management</h4>
+        <p>POS, reconciliation, inventory, and reporting features in async FastAPI on TiDB Cloud, with Celery jobs and CloudWatch logging on AWS ECS Fargate.</p>
+        <div class="project-stack">
+          <span class="stack-chip">FastAPI</span><span class="stack-chip">TiDB</span><span class="stack-chip">Celery</span><span class="stack-chip">AWS ECS</span>
+        </div>
+      </button>
+
+      <button class="project-card" type="button" onclick="showView('project-retail')">
+        <span class="project-role">Backend Developer</span>
+        <h4>Retail Order Management</h4>
+        <p>Feature delivery against bilingual JP/EN specs covering sales, ordering, inventory, receivables, B2C flows, plus scheduled batch jobs.</p>
+        <div class="project-stack">
+          <span class="stack-chip">Python</span><span class="stack-chip">SQLAlchemy</span><span class="stack-chip">Alembic</span><span class="stack-chip">JP/EN</span>
+        </div>
+      </button>
+
     </div>
   </div>
 
-  <div id="view-tools-api" class="view">
-    <h2>API &amp; Testing Tools</h2>
-    <p class="subtitle">Clients and docs platforms for designing, testing, and documenting HTTP APIs.</p>
-    <div class="items-grid" id="grid-tools-api"></div>
+  <!-- ═══════════ PROJECT DETAILS ═══════════ -->
+
+  <div id="view-project-hr" class="view">
+    <span class="role-tag">Architect &amp; Tech Lead · Mentor of 6 Interns</span>
+    <h2>HR Information System</h2>
+    <p class="subtitle">Authored target architecture and led a 6-intern team rewriting a legacy JavaScript + Sequelize HR backend.</p>
+
+    <h3 class="section-title-sm">What I Did</h3>
+    <ul class="task-list">
+      <li>Designed a <strong>17-module feature-based modular monolith</strong> and a 4-tier migration plan (Setup &rarr; Auth &rarr; 13 parallel feature modules &rarr; Aggregation), letting the team work modules in parallel rather than sequentially.</li>
+      <li>Mirrored Python DDD / modular-monolith patterns onto a TypeScript + TSOA + Prisma + TiDB Cloud stack so interns learn transferable architectural principles, not framework trivia.</li>
+      <li>Encoded module boundaries and Prisma model ownership as <strong>ESLint boundaries-plugin rules and architectural fitness tests</strong>, gated by Husky pre-commit / pre-push &mdash; wrong imports and unauthorized DB calls fail before code reaches main.</li>
+      <li>Mentored interns end-to-end: TS code, Git workflow, Linode deploys, Nginx, SSH keys, least-privilege Linux users.</li>
+    </ul>
+
+    <h3 class="section-title-sm">Mirror Stack &mdash; A Mentoring Philosophy</h3>
+    <p class="prose">Each Python tool I run maps one-to-one to its TS counterpart on this project, so onboarding teaches one architectural model, not two.</p>
+    <div class="mirror-table-wrap">
+      <table class="mirror-table">
+        <thead><tr><th>Primary (Python)</th><th></th><th>Mirror (TS)</th></tr></thead>
+        <tbody>
+          <tr><td>FastAPI</td><td class="mt-arrow">&harr;</td><td><strong>TSOA</strong> <span class="mt-note">decorator-based auto-OpenAPI</span></td></tr>
+          <tr><td>SQLAlchemy + Alembic</td><td class="mt-arrow">&harr;</td><td><strong>Prisma</strong></td></tr>
+          <tr><td>FastAPI <code>Depends()</code></td><td class="mt-arrow">&harr;</td><td><strong>tsyringe</strong></td></tr>
+          <tr><td>Ruff</td><td class="mt-arrow">&harr;</td><td><strong>ESLint</strong></td></tr>
+          <tr><td>Pre-commit</td><td class="mt-arrow">&harr;</td><td><strong>Husky</strong></td></tr>
+          <tr><td>Pydantic typing</td><td class="mt-arrow">&harr;</td><td><strong>TypeScript</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="section-title-sm">Stack</h3>
+    <div class="stack-chips">
+      <span class="stack-chip">TypeScript (strict)</span><span class="stack-chip">Express + TSOA</span><span class="stack-chip">Prisma v6</span><span class="stack-chip">TiDB Cloud</span><span class="stack-chip">Socket.IO</span><span class="stack-chip">tsyringe</span><span class="stack-chip">Jest</span><span class="stack-chip">ESLint (boundaries)</span><span class="stack-chip">Husky</span><span class="stack-chip">Git</span>
+    </div>
   </div>
 
-  <div id="view-tools-devops" class="view">
-    <h2>DevOps &amp; Infrastructure</h2>
-    <p class="subtitle">Containerization, cloud hosting, and deployment infrastructure.</p>
-    <div class="items-grid" id="grid-tools-devops"></div>
+  <div id="view-project-truck" class="view">
+    <span class="role-tag">Sole Backend Owner</span>
+    <h2>Truck Delivery Slot Reservation Platform</h2>
+    <p class="subtitle">Long-running client engagement with iterative scope &mdash; full ownership of schema, migrations, API design, and delivery.</p>
+
+    <h3 class="section-title-sm">What I Did</h3>
+    <ul class="task-list">
+      <li>Designed a <strong>dual authentication model</strong> &mdash; JWT (HS256) for internal users plus prefixed, SHA-256-hashed, scoped API keys (<code>slots:read</code>, <code>reservations:write</code>, <code>reservations:cancel</code>) for partner e-commerce systems &mdash; enforcing least-privilege with clear test/live separation through key prefixes.</li>
+      <li>Owned the async FastAPI service end-to-end across many client-driven releases: PostgreSQL schema, Alembic migrations, services, routers, tests, Docker, and Git history.</li>
+      <li>Maintained the codebase under <strong>ruff + mypy strict + Alembic discipline</strong> with Git pre-commit / pre-push hooks &mdash; correctness automated rather than remembered.</li>
+    </ul>
+
+    <h3 class="section-title-sm">Stack</h3>
+    <div class="stack-chips">
+      <span class="stack-chip">Python 3.11</span><span class="stack-chip">FastAPI (async)</span><span class="stack-chip">SQLAlchemy 2.0 async</span><span class="stack-chip">PostgreSQL (Neon)</span><span class="stack-chip">Alembic</span><span class="stack-chip">Pydantic v2</span><span class="stack-chip">python-jose + bcrypt</span><span class="stack-chip">Poetry</span><span class="stack-chip">Docker</span><span class="stack-chip">Git</span>
+    </div>
   </div>
 
-  <div id="view-tools-vcs" class="view">
-    <h2>Version Control &amp; Collaboration</h2>
-    <p class="subtitle">Tools for managing source code and collaborating across teams.</p>
-    <div class="items-grid" id="grid-tools-vcs"></div>
+  <div id="view-project-shipper" class="view">
+    <span class="role-tag">Sole Backend Owner</span>
+    <h2>Multi-Tenant Shipper Visibility Portal (BFF)</h2>
+    <p class="subtitle">Long-running client engagement &mdash; designed a BFF over external TMS + WMS systems for shippers' unified, tenant-scoped view.</p>
+
+    <h3 class="section-title-sm">What I Did</h3>
+    <ul class="task-list">
+      <li>Chose <strong>BFF over passthrough proxy</strong>: a custom HTTP integration client handles upstream TMS payload encryption/decryption and protocol quirks, so the frontend never sees provider weirdness.</li>
+      <li>Enforced multi-tenancy at the query layer &mdash; every feature table keyed by <code>SHIPPER_ID</code>; composite indexes <code>(SHIPPER_ID, channel, date)</code>, <code>(SHIPPER_ID, status, date)</code>, <code>(SHIPPER_ID, slip_number)</code>.</li>
+      <li>Maintained Alembic migration discipline and pre-commit gates (ruff lint/format + mypy).</li>
+    </ul>
+
+    <h3 class="section-title-sm">Stack</h3>
+    <div class="stack-chips">
+      <span class="stack-chip">Python 3.11</span><span class="stack-chip">FastAPI (async)</span><span class="stack-chip">SQLAlchemy 2.0 async</span><span class="stack-chip">PostgreSQL (Neon)</span><span class="stack-chip">Alembic</span><span class="stack-chip">Pydantic v2</span><span class="stack-chip">JWT</span><span class="stack-chip">pre-commit</span><span class="stack-chip">Git</span>
+    </div>
   </div>
 
-  <div id="view-tools-editors" class="view">
-    <h2>Editors &amp; Terminals</h2>
-    <p class="subtitle">Code editors, IDEs, and terminal environments used daily.</p>
-    <div class="items-grid" id="grid-tools-editors"></div>
+  <div id="view-project-realtime" class="view">
+    <span class="role-tag">Feature Engineer</span>
+    <h2>Real-Time Multilingual Collaboration Platform</h2>
+    <p class="subtitle">Joined an established Node.js + MongoDB + Socket.IO chat platform &mdash; landed two targeted contributions.</p>
+
+    <h3 class="section-title-sm">What I Did</h3>
+    <ul class="task-list">
+      <li>Shipped <strong>Vietnamese (vi) localization</strong> end-to-end across the language registry, LLM-driven translation pipeline, and notification-preview rendering.</li>
+      <li>Diagnosed and fixed a <strong>concurrent-dispatch notification race</strong> by replacing read-modify-write logic with atomic MongoDB operators (<code>$pull</code>, <code>$push</code>, <code>$inc</code>).</li>
+    </ul>
+
+    <h3 class="section-title-sm">Stack</h3>
+    <div class="stack-chips">
+      <span class="stack-chip">Node.js</span><span class="stack-chip">Express</span><span class="stack-chip">Socket.IO</span><span class="stack-chip">MongoDB (Mongoose)</span><span class="stack-chip">Redis</span><span class="stack-chip">Bull</span><span class="stack-chip">OpenAI / OpenRouter</span><span class="stack-chip">web-push</span><span class="stack-chip">Winston</span><span class="stack-chip">Jest</span>
+    </div>
   </div>
 
-  <div id="view-tools-ai" class="view">
-    <h2>AI Assistants</h2>
-    <p class="subtitle">AI-powered tools for coding, automation, and knowledge work.</p>
-    <div class="items-grid" id="grid-tools-ai"></div>
+  <div id="view-project-pos" class="view">
+    <span class="role-tag">Backend Developer</span>
+    <h2>Point-of-Sale &amp; Cash Management Backend</h2>
+    <p class="subtitle">Feature delivery on an established 5-layer architecture (API &rarr; Service &rarr; CRUD &rarr; Model &rarr; DB) deployed to AWS ECS Fargate.</p>
+
+    <h3 class="section-title-sm">What I Did</h3>
+    <ul class="task-list">
+      <li>Implemented <strong>POS transaction, cash-reconciliation, inventory, and reporting</strong> features in async FastAPI on TiDB Cloud.</li>
+      <li>Built scheduled <strong>end-of-day and reporting jobs</strong> on Celery + Beat with structured Loguru logging for CloudWatch.</li>
+      <li>Shipped financial features under <strong>Black/Ruff/MyPy/Bandit gates</strong> and Alembic migrations.</li>
+    </ul>
+
+    <h3 class="section-title-sm">Stack</h3>
+    <div class="stack-chips">
+      <span class="stack-chip">Python 3.11</span><span class="stack-chip">FastAPI (async)</span><span class="stack-chip">SQLAlchemy 2.0 async</span><span class="stack-chip">TiDB Cloud</span><span class="stack-chip">Alembic</span><span class="stack-chip">Redis</span><span class="stack-chip">Celery + Beat</span><span class="stack-chip">AWS ECS Fargate</span><span class="stack-chip">ECR</span><span class="stack-chip">S3</span><span class="stack-chip">ALB</span><span class="stack-chip">CloudWatch</span><span class="stack-chip">Secrets Manager</span><span class="stack-chip">Loguru</span><span class="stack-chip">Prometheus</span>
+    </div>
   </div>
 
-  <!-- ═══════════ STACK VIEWS ═══════════ -->
-  <div id="view-stack-lang" class="view">
-    <h2>Languages &amp; Runtime</h2>
-    <p class="subtitle">Primary programming languages and runtimes I write production code in.</p>
-    <div class="items-grid" id="grid-stack-lang"></div>
+  <div id="view-project-retail" class="view">
+    <span class="role-tag">Backend Developer</span>
+    <h2>Retail Order Management System</h2>
+    <p class="subtitle">Feature delivery against detailed bilingual (JP/EN) specifications covering sales, ordering, inventory, receivables, and B2C flows.</p>
+
+    <h3 class="section-title-sm">What I Did</h3>
+    <ul class="task-list">
+      <li>Implemented business logic across <strong>sales, ordering, inventory/receiving, accounts receivable, B2C-site flows</strong>, plus scheduled batch jobs.</li>
+      <li>Maintained integration touchpoints with <strong>EDI partners, e-commerce storefronts, and third-party delivery platforms</strong>.</li>
+      <li>Worked from bilingual JP/EN specifications &mdash; precise translation between business intent and code.</li>
+    </ul>
+
+    <h3 class="section-title-sm">Stack</h3>
+    <div class="stack-chips">
+      <span class="stack-chip">Python (async)</span><span class="stack-chip">SQLAlchemy</span><span class="stack-chip">Alembic</span><span class="stack-chip">Git</span><span class="stack-chip">JP/EN specs</span>
+    </div>
   </div>
 
-  <div id="view-stack-fw" class="view">
-    <h2>Frameworks &amp; ORM</h2>
-    <p class="subtitle">Web frameworks, ORMs, and migration tooling I build with regularly.</p>
-    <div class="items-grid" id="grid-stack-fw"></div>
-  </div>
+  <!-- ═══════════ SKILLS ═══════════ -->
+  <div id="view-skills" class="view">
+    <h2>Skills</h2>
+    <p class="subtitle">A consolidated reference of what I work with day to day &mdash; grouped, not ranked.</p>
 
-  <div id="view-stack-db" class="view">
-    <h2>Databases</h2>
-    <p class="subtitle">Relational and document databases I design schemas against.</p>
-    <div class="items-grid" id="grid-stack-db"></div>
-  </div>
+    <div class="skills-grid">
+      <section class="skill-block">
+        <h3 class="skill-block-title">Languages</h3>
+        <div class="stack-chips"><span class="stack-chip">Python 3.11+</span><span class="stack-chip">TypeScript (strict)</span><span class="stack-chip">JavaScript / Node.js</span></div>
+      </section>
 
-  <div id="view-stack-cache" class="view">
-    <h2>Caching &amp; Data Layer</h2>
-    <p class="subtitle">In-memory stores for caching, queues, and pub/sub.</p>
-    <div class="items-grid" id="grid-stack-cache"></div>
-  </div>
+      <section class="skill-block">
+        <h3 class="skill-block-title">Frameworks</h3>
+        <div class="stack-chips"><span class="stack-chip">FastAPI</span><span class="stack-chip">Express + TSOA</span><span class="stack-chip">Express + Socket.IO</span></div>
+      </section>
 
-  <div id="view-stack-env" class="view">
-    <h2>Environments &amp; Package Managers</h2>
-    <p class="subtitle">Virtual environments, containerization, and dependency managers.</p>
-    <div class="items-grid" id="grid-stack-env"></div>
-  </div>
+      <section class="skill-block">
+        <h3 class="skill-block-title">Databases</h3>
+        <div class="stack-chips"><span class="stack-chip">PostgreSQL (Neon)</span><span class="stack-chip">TiDB Cloud</span><span class="stack-chip">MongoDB</span><span class="stack-chip">Redis</span></div>
+      </section>
 
-  <div id="view-stack-quality" class="view">
-    <h2>Code Quality &amp; Tooling</h2>
-    <p class="subtitle">Linters, formatters, type checkers, and git hook frameworks.</p>
-    <div class="items-grid" id="grid-stack-quality"></div>
-  </div>
+      <section class="skill-block">
+        <h3 class="skill-block-title">ORMs &amp; Migrations</h3>
+        <div class="stack-chips"><span class="stack-chip">SQLAlchemy 2.0 async</span><span class="stack-chip">Alembic</span><span class="stack-chip">Prisma v6</span><span class="stack-chip">Mongoose</span></div>
+      </section>
 
-  <div id="view-stack-cicd" class="view">
-    <h2>Version Control &amp; CI/CD</h2>
-    <p class="subtitle">Source control and automated build/test/deploy pipelines.</p>
-    <div class="items-grid" id="grid-stack-cicd"></div>
-  </div>
+      <section class="skill-block">
+        <h3 class="skill-block-title">Cloud &amp; DevOps</h3>
+        <div class="stack-chips"><span class="stack-chip">AWS ECS Fargate</span><span class="stack-chip">ECR</span><span class="stack-chip">S3</span><span class="stack-chip">ALB</span><span class="stack-chip">CloudWatch</span><span class="stack-chip">Secrets Manager</span><span class="stack-chip">Linode</span><span class="stack-chip">Nginx</span><span class="stack-chip">Docker</span><span class="stack-chip">Git + Husky / pre-commit</span></div>
+      </section>
 
-  <!-- ═══════════ KNOWLEDGE VIEWS ═══════════ -->
-  <div id="view-design" class="view">
-    <h2>System Design Knowledge</h2>
-    <p class="subtitle">Architectural patterns and paradigms I understand and can apply.</p>
-    <div class="items-grid" id="grid-design"></div>
+      <section class="skill-block">
+        <h3 class="skill-block-title">Async &amp; Jobs</h3>
+        <div class="stack-chips"><span class="stack-chip">asyncio</span><span class="stack-chip">Celery + Beat</span><span class="stack-chip">Bull</span><span class="stack-chip">atomic DB operators</span><span class="stack-chip">Redis distributed locks</span><span class="stack-chip">circuit breakers</span><span class="stack-chip">retry-with-backoff</span></div>
+      </section>
+
+      <section class="skill-block">
+        <h3 class="skill-block-title">Architecture</h3>
+        <div class="stack-chips"><span class="stack-chip">DDD</span><span class="stack-chip">Modular Monolith</span><span class="stack-chip">enforced boundaries</span><span class="stack-chip">BFF</span><span class="stack-chip">multi-tenant query isolation</span><span class="stack-chip">dual auth (JWT + scoped API keys)</span><span class="stack-chip">service-layer SSOT</span></div>
+      </section>
+
+      <section class="skill-block">
+        <h3 class="skill-block-title">Quality</h3>
+        <div class="stack-chips"><span class="stack-chip">mypy strict</span><span class="stack-chip">TS strict</span><span class="stack-chip">ruff / black</span><span class="stack-chip">ESLint boundaries</span><span class="stack-chip">Bandit</span><span class="stack-chip">pytest / pytest-asyncio</span><span class="stack-chip">Jest</span><span class="stack-chip">Supertest</span><span class="stack-chip">MongoMemoryServer</span></div>
+      </section>
+
+      <section class="skill-block">
+        <h3 class="skill-block-title">Tools</h3>
+        <div class="stack-chips"><span class="stack-chip">DBeaver</span><span class="stack-chip">MongoDB Compass</span><span class="stack-chip">Postman</span><span class="stack-chip">Swagger</span><span class="stack-chip">VS Code (Remote-SSH)</span><span class="stack-chip">GitHub Actions</span><span class="stack-chip">Claude Code</span></div>
+      </section>
+    </div>
   </div>
 
   <!-- ═══════════ LEARNING VIEWS ═══════════ -->
@@ -672,6 +747,7 @@
     <!-- ─── Rendered notes from Full_Flow.txt ─── -->
     <div class="learning-doc" id="doc-learning-full-flow" data-src="Full_Flow.txt">Loading&hellip;</div>
   </div>
+
 
   <div id="view-learning-git-ssh" class="view">
     <h2>Git &amp; SSH Workflow</h2>
