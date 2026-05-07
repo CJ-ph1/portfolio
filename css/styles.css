@@ -991,3 +991,31 @@ html { scroll-behavior: smooth; }
   background: rgba(129, 140, 248, 0.14);
   color: var(--accent);
 }
+
+/* ════════════════════════════════════════════════════════════════════
+   AVATAR IMAGE  —  drop a file at portfolio/img/avatar.jpg
+   - When present:    photo fills the circle, "CJ" letters hidden
+   - When missing:    onerror flags img as .is-missing, gradient + "CJ" show
+   ════════════════════════════════════════════════════════════════════ */
+.hero-avatar-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  z-index: 1;
+}
+.hero-avatar-img.is-missing { display: none; }
+.hero-avatar { position: relative; overflow: hidden; }
+/* The "CJ" letters fall back when the image fails */
+.hero-avatar-fallback {
+  position: relative; z-index: 0;
+  display: none;
+}
+.hero-avatar:has(.hero-avatar-img.is-missing) .hero-avatar-fallback { display: block; }
+/* Browsers without :has() — fallback shows by default; image overlays it */
+@supports not selector(:has(*)) {
+  .hero-avatar-fallback { display: block; }
+}
+/* Keep the badge above the image */
+.hero-avatar-badge { z-index: 2; }

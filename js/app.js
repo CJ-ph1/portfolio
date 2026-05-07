@@ -270,6 +270,24 @@ function init() {
   updateToolbar(currentViewId() || 'dashboard');
 
   initTheme();
+  initAvatar();
+}
+
+// ============================================================================
+//  Avatar — try common extensions, use first one that loads, else fall back
+// ============================================================================
+function initAvatar() {
+  const img = document.querySelector('.hero-avatar-img');
+  if (!img) return;
+  const exts = ['jpg', 'jpeg', 'png', 'webp', 'avif', 'gif', 'svg'];
+  let i = 0;
+  (function tryNext() {
+    if (i >= exts.length) { img.classList.add('is-missing'); return; }
+    const test = new Image();
+    test.onload  = () => { img.src = test.src; img.classList.remove('is-missing'); };
+    test.onerror = () => { i++; tryNext(); };
+    test.src = 'img/avatar.' + exts[i];
+  })();
 }
 
 document.addEventListener('DOMContentLoaded', init);
