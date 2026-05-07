@@ -8,109 +8,38 @@
 </head>
 <body>
 
-<nav>
-  <div class="nav-brand">
-    <h1>My Tech Stack</h1>
-    <p>Knowledge Journey Explorer</p>
+<header class="site-header">
+  <div class="container site-header-inner">
+    <button class="brand" type="button" data-view="dashboard">
+      <span class="brand-mark">CJ</span>
+      <span class="brand-name">Christian Jay Mendez</span>
+    </button>
+
+    <nav class="primary-nav" aria-label="Primary">
+      <button class="nav-link active" data-view="dashboard">Bio</button>
+      <button class="nav-link" data-group="tools">Tools</button>
+      <button class="nav-link" data-group="stack">Tech Stack</button>
+      <button class="nav-link" data-view="design">System Design</button>
+      <button class="nav-link" data-group="notes">Notes</button>
+    </nav>
+
+    <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M4.93 4.93l1.41 1.41"/><path d="M17.66 17.66l1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M4.93 19.07l1.41-1.41"/><path d="M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <a class="header-cta" href="mailto:christian.mendez@easycom-intl.com">Get in touch</a>
   </div>
 
-  <div class="nav-section">Overview</div>
-  <button class="nav-btn active" data-view="dashboard">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-    Home
-  </button>
-
-  <div class="nav-section">Tools</div>
-  <button class="nav-btn" data-view="tools-db">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
-    Databases &amp; Data
-  </button>
-  <button class="nav-btn" data-view="tools-api">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-    API &amp; Testing
-  </button>
-  <button class="nav-btn" data-view="tools-devops">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-    DevOps &amp; Infra
-  </button>
-  <button class="nav-btn" data-view="tools-vcs">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-    Version Control
-  </button>
-  <button class="nav-btn" data-view="tools-editors">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
-    Editors &amp; Terminals
-  </button>
-  <button class="nav-btn" data-view="tools-ai">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg>
-    AI Assistants
-  </button>
-
-  <div class="nav-section">Tech Stack</div>
-  <button class="nav-btn" data-view="stack-lang">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
-    Languages &amp; Runtime
-  </button>
-  <button class="nav-btn" data-view="stack-fw">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-    Frameworks &amp; ORM
-  </button>
-  <button class="nav-btn" data-view="stack-db">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg>
-    Databases
-  </button>
-  <button class="nav-btn" data-view="stack-cache">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-    Caching
-  </button>
-  <button class="nav-btn" data-view="stack-env">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-    Environments
-  </button>
-  <button class="nav-btn" data-view="stack-quality">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-    Code Quality
-  </button>
-  <button class="nav-btn" data-view="stack-cicd">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/><path d="M20.49 15A9 9 0 0 1 5.64 18.36L1 14"/></svg>
-    CI/CD
-  </button>
-
-  <div class="nav-section">Knowledge</div>
-  <button class="nav-btn" data-view="design">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-    System Design
-  </button>
-
-  <div class="nav-section">Learning</div>
-  <button class="nav-btn" data-view="learning-architecture">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/></svg>
-    Architecture Review
-  </button>
-  <button class="nav-btn" data-view="learning-glossary">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-    API Glossary
-  </button>
-  <button class="nav-btn" data-view="learning-python">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
-    Python Integration
-  </button>
-  <button class="nav-btn" data-view="learning-full-flow">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-    Full Flow
-  </button>
-  <button class="nav-btn" data-view="learning-git-ssh">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="M4.93 4.93l2.12 2.12"/><path d="M16.95 16.95l2.12 2.12"/><path d="M2 12h3"/><path d="M19 12h3"/><path d="M4.93 19.07l2.12-2.12"/><path d="M16.95 7.05l2.12-2.12"/></svg>
-    Git &amp; SSH
-  </button>
-
-  <div class="nav-footer">
-    <span id="footer-summary">Loading&hellip;</span><br>
-    <span style="color:#60a5fa">Click any card to expand details</span>
+  <!-- Sub-nav: shown when a group (Tools/Tech Stack/Notes) is active -->
+  <div class="sub-nav" id="sub-nav" hidden>
+    <div class="container sub-nav-inner">
+      <div class="sub-nav-tabs" id="sub-nav-tabs"></div>
+    </div>
   </div>
-</nav>
+</header>
 
 <main>
+  <div class="container">
 
   <!-- ═══════════ Top toolbar (back / breadcrumb) ═══════════ -->
   <div class="view-toolbar" id="view-toolbar">
@@ -127,145 +56,154 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-bg" aria-hidden="true"></div>
-      <div class="hero-inner">
-        <div class="hero-avatar" aria-hidden="true">
-          <span>CJ</span>
-          <span class="hero-avatar-status" title="Open to collaboration"></span>
-        </div>
-        <div class="hero-text">
-          <div class="hero-eyebrow">
-            <span class="hero-dot"></span> Available for collaboration
+      <div class="hero-grid">
+
+        <!-- LEFT: identity -->
+        <aside class="hero-left">
+          <div class="hero-avatar" aria-hidden="true">
+            <span>CJ</span>
+            <span class="hero-avatar-badge" title="Open to collaboration">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
           </div>
           <h1 class="hero-name">Christian Jay Mendez</h1>
-          <p class="hero-role">Python-First Backend Engineer &middot; Architect-minded &middot; Mentor</p>
-          <p class="hero-tagline">
-            I think about software architecturally before syntactically &mdash; bounded domains,
-            clean layers, and data flow that's easy to reason about. This site is my living
-            engineering portfolio and self-study tracker.
-          </p>
-          <div class="hero-chips">
-            <span class="hero-chip chip-primary">Python &middot; FastAPI &middot; SQLAlchemy</span>
-            <span class="hero-chip chip-mirror">Mirror stack: TS &middot; TSOA &middot; Prisma</span>
-            <span class="hero-chip chip-infra">Docker &middot; Linode &middot; Nginx</span>
+          <p class="hero-pronouns">(he/him)</p>
+          <p class="hero-role">Python-First Backend Engineer</p>
+          <p class="hero-affil">Architect-minded · Mentor</p>
+          <div class="hero-socials">
+            <a class="social-icon" href="mailto:christian.mendez@easycom-intl.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            <a class="social-icon" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1 1.9 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3"/></svg>
+            </a>
+            <a class="social-icon" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.3A1.8 1.8 0 116.5 4.7a1.8 1.8 0 010 3.6zM19 19h-3v-4.7c0-1.1 0-2.6-1.6-2.6S12.5 13 12.5 14.3V19h-3v-9h2.9v1.2h.1a3.2 3.2 0 012.9-1.6c3 0 3.6 2 3.6 4.6V19z"/></svg>
+            </a>
           </div>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:christian.mendez@easycom-intl.com">
+        </aside>
+
+        <!-- RIGHT: summary + stack snapshot -->
+        <div class="hero-right">
+          <div class="summary-block">
+            <div class="block-head">
+              <span class="block-icon block-icon-indigo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M5 18s1-4 4-4 4 4 4 4"/><line x1="14" y1="9" x2="19" y2="9"/><line x1="14" y1="13" x2="19" y2="13"/></svg>
+              </span>
+              <h2 class="block-title">Professional Summary</h2>
+            </div>
+            <p class="block-prose">
+              I'm a Python-first backend engineer who thinks about software <strong>architecturally before syntactically</strong> &mdash; bounded domains, clean layers, and data flow that's easy to reason about. My primary stack is FastAPI + SQLAlchemy + Alembic, deployed behind Nginx on Linode VPS infrastructure.
+            </p>
+            <p class="block-prose">
+              Alongside it I maintain a parallel JS/TS <em>mirror stack</em> for mentoring &mdash; each Python tool maps one-to-one to its TS counterpart, so interns can transfer concepts cleanly between the two.
+            </p>
+            <a class="cta-btn" href="mailto:christian.mendez@easycom-intl.com">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               Get in touch
             </a>
-            <button class="btn btn-ghost" type="button" onclick="showView('tools-db')">
-              Explore the stack
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </button>
+          </div>
+
+          <div class="snapshot-block">
+            <div class="block-head">
+              <span class="block-icon block-icon-indigo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7l10-5 10 5-10 5L2 7z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </span>
+              <h2 class="block-title">Stack Snapshot</h2>
+            </div>
+            <div class="snapshot-cards">
+              <button class="snapshot-card" type="button" onclick="showView('stack-fw')">
+                <span class="snap-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </span>
+                <h3 class="snap-title">Backend</h3>
+                <p class="snap-sub">FastAPI · SQLAlchemy · Alembic</p>
+              </button>
+              <button class="snapshot-card" type="button" onclick="showView('stack-lang')">
+                <span class="snap-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </span>
+                <h3 class="snap-title">Mirror Stack</h3>
+                <p class="snap-sub">TypeScript · TSOA · Prisma</p>
+              </button>
+              <button class="snapshot-card" type="button" onclick="showView('tools-devops')">
+                <span class="snap-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </span>
+                <h3 class="snap-title">Infra</h3>
+                <p class="snap-sub">Docker · Linode · Nginx</p>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Currently Learning -->
+    <!-- Mirror Stack Section -->
     <section class="home-section">
       <div class="section-head">
         <div>
-          <h3 class="section-title">Currently Learning</h3>
-          <p class="section-sub">A living list of what I'm actively studying this quarter &mdash; edit in <code>index.html</code>.</p>
+          <h3 class="section-title">The Mirror Stack &mdash; A Mentoring Philosophy</h3>
+          <p class="section-sub">Each tool on my Python side maps one-to-one to its JS/TS counterpart. When interns learn one side, the concepts transfer cleanly to the other.</p>
+        </div>
+      </div>
+      <div class="mirror-table-wrap">
+        <table class="mirror-table">
+          <thead>
+            <tr><th>Primary (Python)</th><th></th><th>Mirror (JS/TS)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>FastAPI</td><td class="mt-arrow">↔</td><td><strong>TSOA</strong> <span class="mt-note">decorator-based auto-OpenAPI</span></td></tr>
+            <tr><td>SQLAlchemy + Alembic</td><td class="mt-arrow">↔</td><td><strong>Prisma</strong></td></tr>
+            <tr><td>FastAPI <code>Depends()</code></td><td class="mt-arrow">↔</td><td><strong>Tsyringe</strong></td></tr>
+            <tr><td>Ruff</td><td class="mt-arrow">↔</td><td><strong>ESLint</strong></td></tr>
+            <tr><td>Pre-commit</td><td class="mt-arrow">↔</td><td><strong>Husky</strong></td></tr>
+            <tr><td>Pydantic typing</td><td class="mt-arrow">↔</td><td><strong>TypeScript</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Recent Notes -->
+    <section class="home-section">
+      <div class="section-head">
+        <div>
+          <h3 class="section-title">Recent Notes</h3>
+          <p class="section-sub">Living notes I keep as I learn &mdash; updated as I read.</p>
         </div>
         <span class="section-pill">Q2 2026</span>
       </div>
-      <div class="learning-grid">
-        <button class="learning-item" type="button" onclick="showView('learning-architecture')">
-          <div class="learning-head">
-            <strong>API Architecture Review</strong>
-            <span class="learning-stage stage-progress">Reading</span>
-          </div>
-          <p>Layered flow from Endpoint &rarr; Schema &rarr; Service &rarr; Repository &rarr; Model &rarr; Database. When each layer is needed and when it can be skipped.</p>
-          <span class="learning-cta">Open notes &rarr;</span>
+      <div class="notes-grid">
+        <button class="note-card" type="button" onclick="showView('learning-architecture')">
+          <span class="note-tag">Architecture</span>
+          <h4>API Architecture Review</h4>
+          <p>Layered flow from Endpoint → Schema → Service → Repository → Model → Database. When each layer is needed and when it can be skipped.</p>
+          <span class="note-cta">Read note →</span>
         </button>
-        <button class="learning-item" type="button" onclick="showView('learning-glossary')">
-          <div class="learning-head">
-            <strong>Professional API Glossary</strong>
-            <span class="learning-stage stage-progress">Reading</span>
-          </div>
+        <button class="note-card" type="button" onclick="showView('learning-glossary')">
+          <span class="note-tag">Reference</span>
+          <h4>Professional API Glossary</h4>
           <p>Framework-agnostic terminology across 11 areas: fundamentals, auth, databases, deployment, design patterns, security, performance.</p>
-          <span class="learning-cta">Open notes &rarr;</span>
+          <span class="note-cta">Read note →</span>
         </button>
-        <button class="learning-item" type="button" onclick="showView('learning-python')">
-          <div class="learning-head">
-            <strong>Python Integration</strong>
-            <span class="learning-stage stage-progress">Reading</span>
-          </div>
-          <p>The Python toolbelt for each API layer &mdash; FastAPI, Pydantic, SQLAlchemy, Alembic, pytest, Uvicorn, Celery, Redis, and more.</p>
-          <span class="learning-cta">Open notes &rarr;</span>
+        <button class="note-card" type="button" onclick="showView('learning-python')">
+          <span class="note-tag">Python</span>
+          <h4>Python Integration</h4>
+          <p>The Python toolbelt for each API layer — FastAPI, Pydantic, SQLAlchemy, Alembic, pytest, Uvicorn, Celery, Redis, and more.</p>
+          <span class="note-cta">Read note →</span>
         </button>
-      </div>
-    </section>
-
-    <!-- At a glance stats -->
-    <section class="home-section">
-      <div class="section-head">
-        <h3 class="section-title">At a glance</h3>
-      </div>
-      <div class="stats-row stats-row-3">
-        <div class="stat-card stat-total"><div class="stat-num" id="stat-tools">0</div><div class="stat-label">Tools</div></div>
-        <div class="stat-card stat-pass"><div class="stat-num" id="stat-stack">0</div><div class="stat-label">Stack Items</div></div>
-        <div class="stat-card stat-partial"><div class="stat-num" id="stat-design">0</div><div class="stat-label">Design Patterns</div></div>
-      </div>
-    </section>
-
-    <!-- What's in the explorer -->
-    <section class="home-section">
-      <div class="section-head">
-        <h3 class="section-title">What's in this explorer</h3>
-      </div>
-      <div class="feature-grid">
-        <button class="feature-card feat-tools" type="button" onclick="showView('tools-db')">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
-          </div>
-          <h4>Tools</h4>
-          <p>Database clients, API tools, containers, editors, and AI assistants I reach for every day.</p>
-          <span class="feature-cta">Browse tools &rarr;</span>
+        <button class="note-card" type="button" onclick="showView('learning-full-flow')">
+          <span class="note-tag">Walkthrough</span>
+          <h4>End-to-End: Place an Order</h4>
+          <p>How architecture, glossary, and Python integration all connect in one real scenario — with a full SVG architecture diagram.</p>
+          <span class="note-cta">Read note →</span>
         </button>
-        <button class="feature-card feat-stack" type="button" onclick="showView('stack-lang')">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-          </div>
-          <h4>Tech Stack</h4>
-          <p>Languages, frameworks, and infrastructure I build with. JS/TS mirror items live here too, marked with a <span class="mirror-badge" style="font-size:9px">MIRROR</span> badge.</p>
-          <span class="feature-cta">Browse stack &rarr;</span>
+        <button class="note-card" type="button" onclick="showView('learning-git-ssh')">
+          <span class="note-tag">Workflow</span>
+          <h4>Git &amp; SSH Workflow</h4>
+          <p>Day-to-day commands for wiring a local repo to a remote host over SSH — auth, credential helpers, identity, remotes.</p>
+          <span class="note-cta">Read note →</span>
         </button>
-        <button class="feature-card feat-design" type="button" onclick="showView('design')">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-          </div>
-          <h4>System Design</h4>
-          <p>Architectural patterns and paradigms I understand and can actually apply &mdash; not just name-drop.</p>
-          <span class="feature-cta">Browse patterns &rarr;</span>
-        </button>
-      </div>
-    </section>
-
-    <!-- Average knowledge -->
-    <section class="home-section">
-      <div class="card">
-        <div class="section-head" style="margin-bottom:8px;">
-          <h3 class="section-title" style="margin:0;">Average knowledge by category</h3>
-        </div>
-        <div id="avg-rows" style="display:flex;flex-direction:column;gap:10px;margin-top:10px;"></div>
-      </div>
-    </section>
-
-    <!-- Quick Search -->
-    <section class="home-section">
-      <div class="card">
-        <div class="section-head" style="margin-bottom:8px;">
-          <h3 class="section-title" style="margin:0;">Quick search</h3>
-          <span class="section-sub" style="margin:0;">Across tools, stack, and design patterns.</span>
-        </div>
-        <div class="filter-bar">
-          <input type="text" id="global-search" class="search-input" placeholder="Search all tools, frameworks, and skills..." oninput="globalSearch(this.value)">
-        </div>
-        <div id="global-results" class="items-grid"></div>
-        <div id="global-empty" class="empty-state hidden">No matches found. Try a different search term.</div>
       </div>
     </section>
 
@@ -740,7 +678,16 @@
     <div class="learning-doc" id="doc-learning-git-ssh" data-src="Git_SSH_Workflow.txt">Loading&hellip;</div>
   </div>
 
+  </div><!-- /.container -->
 </main>
+
+<footer class="site-footer">
+  <div class="container site-footer-inner">
+    <span>&copy; 2026 Christian Jay Mendez</span>
+    <span class="dot-sep">·</span>
+    <span>Living engineering portfolio</span>
+  </div>
+</footer>
 
 <script src="js/data.js"></script>
 <script src="js/learning-content.js"></script>
