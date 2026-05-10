@@ -74,12 +74,13 @@ function currentViewId() {
 // ============================================================================
 const GROUP_TABS = {
   projects: [
-    { id: 'project-hr',       label: 'HR System' },
-    { id: 'project-truck',    label: 'Truck Slot' },
-    { id: 'project-shipper',  label: 'Shipper BFF' },
-    { id: 'project-realtime', label: 'Real-Time Chat' },
-    { id: 'project-pos',      label: 'POS' },
-    { id: 'project-retail',   label: 'Retail OMS' },
+    { id: 'project-hr',            label: 'HR System' },
+    { id: 'project-truck',         label: 'Truck Slot' },
+    { id: 'project-shipper',       label: 'Shipper BFF' },
+    { id: 'project-realtime',      label: 'Real-Time Chat' },
+    { id: 'project-pos',           label: 'POS' },
+    { id: 'project-retail',        label: 'Retail OMS' },
+    { id: 'project-mvp-logistics', label: 'MVP Logistics' },
   ],
   notes: [
     { id: 'learning-architecture', label: 'Architecture Review' },

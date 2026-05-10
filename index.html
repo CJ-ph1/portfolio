@@ -64,7 +64,13 @@
             <span class="hero-avatar-fallback">CJ</span>
           </div>
           <h1 class="hero-name">Christian Jay Mendez</h1>
-          <p class="hero-role">Software Developer</p>
+          <p class="hero-role">Python-First Backend Engineer</p>
+          <p class="hero-affil">Architect-minded · Mentor</p>
+          <p class="hero-employer">
+            <span class="employer-dot" aria-hidden="true"></span>
+            <strong>Easycom Japan Philippines Inc.</strong>
+            <span class="employer-meta">Sep 2025 – Present · Regular</span>
+          </p>
           <div class="hero-socials">
             <a class="social-icon" href="mailto:cjaymendezw@gmail.com" aria-label="Email">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -176,7 +182,7 @@
       </button>
 
       <button class="project-card" type="button" onclick="showView('project-pos')">
-        <span class="project-role">Backend Engineer · End-to-End Owner</span>
+        <span class="project-role">Sole Backend Engineer · End-to-End Owner</span>
         <h4>Point-of-Sale &amp; Cash Management Backend</h4>
         <p>Retail backend for sales, reconciliation, inventory, and reporting features on TiDB Cloud, deployed to AWS ECS Fargate.</p>
         <div class="project-stack">
@@ -185,9 +191,9 @@
       </button>
 
       <button class="project-card" type="button" onclick="showView('project-retail')">
-        <span class="project-role">Backend Engineer · End-to-End Owner</span>
+        <span class="project-role">Sole Backend Engineer · End-to-End Owner</span>
         <h4>Retail Order Management System</h4>
-        <p>Order management for an international retailer with bilingual JP/EN workflows across sales, procurement, inventory, receivables, and storefront features.</p>
+        <p>1,320 backend feature rows for a Japanese retailer &mdash; sales, procurement, inventory, receivables, and storefront features against bilingual JP/EN specs.</p>
         <div class="project-stack">
           <span class="stack-chip">Python (async)</span><span class="stack-chip">SQLAlchemy</span><span class="stack-chip">Alembic</span><span class="stack-chip">Git</span><span class="stack-chip">JP/EN specs</span>
         </div>
@@ -196,7 +202,7 @@
       <button class="project-card" type="button" onclick="showView('project-procurement')">
         <span class="project-role">Backend Engineer · Procurement Module</span>
         <h4>MVP Logistics Platform</h4>
-        <p>Owned the procurement bounded context in a beverage and food logistics MVP, shipping purchase and replenishment workflows on a tight delivery window.</p>
+        <p>Procurement bounded context in a beverage/food logistics MVP &mdash; 31 endpoints, 27 tables, P95 &lt; 500ms against 920 orders/day (peak 1,300).</p>
         <div class="project-stack">
           <span class="stack-chip">Python 3.11</span><span class="stack-chip">FastAPI</span><span class="stack-chip">SQLAlchemy 2.0 async</span><span class="stack-chip">TiDB Cloud 7.5</span><span class="stack-chip">Alembic</span><span class="stack-chip">Docker</span><span class="stack-chip">Black / Ruff / mypy</span>
         </div>
@@ -210,7 +216,8 @@
   <div id="view-project-hr" class="view">
     <span class="role-tag">Backend Architect &amp; Tech Lead · Team of 6</span>
     <h2>HR Information System</h2>
-    <p class="subtitle">3 months — Internal HR platform covering employee records, organisational structure, and HR workflows.</p>
+    <p class="duration-pill">3 months</p>
+    <p class="subtitle">Internal HR platform &mdash; employee records, organisational structure, and HR workflows. Authored the target architecture and led a 6-intern team rewriting the legacy JavaScript + Sequelize backend.</p>
 
     <h3 class="section-title-sm">What I Did</h3>
     <ul class="task-list">
@@ -245,13 +252,14 @@
   <div id="view-project-truck" class="view">
     <span class="role-tag">Backend Engineer · End-to-End Owner</span>
     <h2>Truck Delivery Slot Reservation Platform</h2>
-    <p class="subtitle">Approximately 6 weeks — logistics platform that lets e-commerce partners book truck delivery time slots into distribution centres.</p>
+    <p class="duration-pill">~6 weeks</p>
+    <p class="subtitle">Logistics platform that lets e-commerce partners book truck delivery time slots into distribution centres. Sole backend ownership covering schema, migrations, API design, and delivery (<strong>100 of 119 backend tasks tracked to me</strong>).</p>
 
     <h3 class="section-title-sm">What I Did</h3>
     <ul class="task-list">
-      <li>Designed a <strong>dual authentication model</strong> — JWT for internal users and scoped, hashed API keys with read / write / cancel permission tiers for partner e-commerce systems, enforcing least-privilege access with clear test / live key separation.</li>
+      <li>Designed a <strong>dual authentication model</strong> &mdash; JWT (HS256) for internal users plus prefixed, SHA-256-hashed, scoped API keys (<code>slots:read</code>, <code>reservations:write</code>, <code>reservations:cancel</code>) for partner e-commerce systems &mdash; enforcing least-privilege with clear test/live separation through key prefixes.</li>
       <li>Delivered the async FastAPI service across multiple client-driven release cycles, owning the full stack from PostgreSQL schema and Alembic migrations through service and router layers, test coverage, Docker packaging, and Git history.</li>
-      <li>Maintained <strong>ruff + mypy strict + Alembic migration discipline</strong> through a continuously evolving requirements cycle, keeping code quality consistent across every release without accumulating technical debt.</li>
+      <li>Maintained <strong>ruff + mypy strict + Alembic migration discipline</strong> with Git pre-commit / pre-push hooks &mdash; keeping code quality consistent across every release without accumulating technical debt.</li>
       <li>The system remained in active delivery throughout the engagement with no regression-caused rollbacks.</li>
     </ul>
 
@@ -264,13 +272,14 @@
   <div id="view-project-shipper" class="view">
     <span class="role-tag">Backend Engineer · End-to-End Owner</span>
     <h2>Multi-Tenant Shipper Visibility Portal (BFF)</h2>
-    <p class="subtitle">Long-running client engagement &mdash; designed a BFF over external TMS + WMS systems for shippers' unified, tenant-scoped view.</p>
+    <p class="duration-pill">~1 month</p>
+    <p class="subtitle">Logistics dashboard &mdash; gives retail shippers a unified, real-time view of their shipments across multiple carriers and warehouses, with each tenant's data fully isolated. Designed a Backend-For-Frontend (BFF) layer over external TMS + WMS systems (<strong>64 of 88 backend tasks owned</strong>).</p>
 
     <h3 class="section-title-sm">What I Did</h3>
     <ul class="task-list">
       <li>Chose <strong>BFF over passthrough proxy</strong>: a custom HTTP integration client handles upstream TMS payload encryption/decryption and protocol quirks, so the frontend never sees provider weirdness.</li>
-      <li>Enforced multi-tenancy at the query layer &mdash; every feature table keyed by <code>SHIPPER_ID</code>; composite indexes <code>(SHIPPER_ID, channel, date)</code>, <code>(SHIPPER_ID, status, date)</code>, <code>(SHIPPER_ID, slip_number)</code>.</li>
-      <li>Maintained Alembic migration discipline and pre-commit gates (ruff lint/format + mypy).</li>
+      <li>Enforced multi-tenancy at the query layer &mdash; every feature table keyed by <code>SHIPPER_ID</code>, every read filters tenant first &mdash; matched composite indexes to actual access patterns: <code>(SHIPPER_ID, channel, date)</code>, <code>(SHIPPER_ID, status, date)</code>, <code>(SHIPPER_ID, slip_number)</code>.</li>
+      <li>Maintained Alembic migration discipline and pre-commit gates (ruff lint/format + mypy) so tenant isolation and schema changes stay correct under continuous client-driven evolution.</li>
     </ul>
 
     <h3 class="section-title-sm">Stack</h3>
@@ -282,12 +291,13 @@
   <div id="view-project-realtime" class="view">
     <span class="role-tag">Backend Engineer · Targeted Contributor</span>
     <h2>Real-Time Multilingual Team Chat Platform</h2>
-    <p class="subtitle">1 month — joined an established Node.js + MongoDB + Socket.IO codebase and delivered two targeted contributions without disrupting existing functionality.</p>
+    <p class="duration-pill">1 month</p>
+    <p class="subtitle">Team messaging app &mdash; real-time chat with built-in AI translation so international teammates can each read in their own language. Joined the established Node.js + MongoDB + Socket.IO platform and landed two targeted contributions without disrupting existing functionality.</p>
 
     <h3 class="section-title-sm">What I Did</h3>
     <ul class="task-list">
       <li>Shipped <strong>Vietnamese (vi) localisation</strong> end-to-end across the language registry, the LLM-driven translation pipeline, and notification-preview rendering.</li>
-      <li>Diagnosed and resolved a concurrent-dispatch notification race condition by replacing read-modify-write logic with atomic MongoDB operators (<code>$pull</code>, <code>$push</code>, <code>$inc</code>), so the database — not the application — serialised contention.</li>
+      <li>Diagnosed and fixed a <strong>concurrent-dispatch notification race</strong> by replacing read-modify-write logic with atomic MongoDB operators (<code>$pull</code>, <code>$push</code>, <code>$inc</code>) so the database &mdash; not the application &mdash; serialises contention; eliminated duplicate and lost pushes.</li>
     </ul>
 
     <h3 class="section-title-sm">Stack</h3>
@@ -297,16 +307,17 @@
   </div>
 
   <div id="view-project-pos" class="view">
-    <span class="role-tag">Backend Engineer · End-to-End Owner</span>
+    <span class="role-tag">Sole Backend Engineer · End-to-End Owner</span>
     <h2>Point-of-Sale &amp; Cash Management Backend</h2>
-    <p class="subtitle">Approximately 2 months — retail point-of-sale backend covering store sales, cash reconciliation, inventory, and reporting.</p>
+    <p class="duration-pill">~2 months</p>
+    <p class="subtitle">Retail point-of-sale backend &mdash; store-level sales transactions, cash reconciliation, inventory, and end-of-day reporting. Delivered <strong>437 backend task rows across two phases</strong> (including initial repo setup) on an established 5-layer architecture (API &rarr; Service &rarr; CRUD &rarr; Model &rarr; DB) deployed to AWS ECS Fargate.</p>
 
     <h3 class="section-title-sm">What I Did</h3>
     <ul class="task-list">
-      <li>Implemented POS transaction, cash-reconciliation, inventory, and reporting features in an async FastAPI backend backed by TiDB Cloud (SaaS distributed SQL), chosen for horizontally scalable financial data workloads.</li>
-      <li>Built and maintained scheduled end-of-day and reporting jobs on Celery + Beat with structured Loguru logging configured for AWS CloudWatch ingestion, providing production observability without changes to the core deployment infrastructure.</li>
+      <li>Implemented <strong>POS transaction, cash-reconciliation, inventory, and reporting</strong> features in an async FastAPI backend backed by TiDB Cloud (SaaS distributed SQL), chosen for horizontally scalable financial data workloads.</li>
+      <li>Built and maintained scheduled <strong>end-of-day and reporting jobs</strong> on Celery + Beat with structured Loguru logging configured for AWS CloudWatch ingestion, providing production observability without changes to the core deployment infrastructure.</li>
       <li>Managed Docker image builds and AWS ECR / ECS Fargate deployment configuration across both delivery phases, working within the team's established infrastructure standards.</li>
-      <li>Shipped all financial-domain features under Black / Ruff / MyPy / Bandit quality gates with full Alembic migration discipline, sustaining the team's standards across a multi-phase delivery.</li>
+      <li>Shipped all financial-domain features under <strong>Black / Ruff / MyPy / Bandit</strong> quality gates with full Alembic migration discipline, sustaining the team's standards across a multi-phase delivery.</li>
     </ul>
 
     <h3 class="section-title-sm">Stack</h3>
@@ -316,9 +327,10 @@
   </div>
 
   <div id="view-project-retail" class="view">
-    <span class="role-tag">Backend Engineer · End-to-End Owner</span>
+    <span class="role-tag">Sole Backend Engineer · End-to-End Owner</span>
     <h2>Retail Order Management System</h2>
-    <p class="subtitle">Feature delivery against detailed bilingual (JP/EN) specifications covering sales, ordering, inventory, receivables, and B2C flows.</p>
+    <p class="duration-pill">~2 months</p>
+    <p class="subtitle">Retail order management for a Japanese retailer &mdash; sales, ordering, inventory, receivables, and B2C storefront flows. Delivered <strong>1,320 backend feature rows</strong> on an established system design against detailed bilingual (JP/EN) specifications.</p>
 
     <h3 class="section-title-sm">What I Did</h3>
     <ul class="task-list">
@@ -336,14 +348,15 @@
   <div id="view-project-procurement" class="view">
     <span class="role-tag">Backend Engineer · Procurement Module</span>
     <h2>MVP Logistics Platform</h2>
-    <p class="subtitle">Approximately 1 week — owned the procurement bounded context within a beverage and food logistics MVP.</p>
+    <p class="duration-pill">~1 week</p>
+    <p class="subtitle">Beverage/food logistics platform &mdash; <strong>11 warehouses, 20K SKUs, 920 orders/day (peak 1,300)</strong>. Owned the procurement bounded context (purchases, replenishment, suppliers) within a modular-monolith MVP delivered alongside a multi-developer team.</p>
 
     <h3 class="section-title-sm">What I Did</h3>
     <ul class="task-list">
-      <li>Owned the procurement bounded context — purchases, replenishment, and supplier management — within a modular-monolith MVP delivered alongside a multi-developer team.</li>
-      <li>Designed and shipped 31 backend endpoints across PurchaseService and ReplenishmentService, covering purchase orders, replenishment approval, supplier management, and goods receipt workflows.</li>
-      <li>Structured the procurement context in a layered architecture (api &rarr; services &rarr; repositories &rarr; models &rarr; schemas &rarr; events) that provides a zero-refactor migration path from modular monolith to microservices.</li>
-      <li>Validated the architecture against the platform's load profile, aiming for P95 under 500ms across 27 tables and 40+ indexes.</li>
+      <li>Owned the procurement bounded context &mdash; purchases, replenishment, and supplier management &mdash; within a modular-monolith MVP delivered alongside a multi-developer team.</li>
+      <li>Designed and shipped <strong>31 backend endpoints</strong> across <code>PurchaseService</code> and <code>ReplenishmentService</code>, covering purchase orders, replenishment approval, supplier management, and goods receipt workflows.</li>
+      <li>Structured the procurement context in a layered architecture (<code>api &rarr; services &rarr; repositories &rarr; models &rarr; schemas &rarr; events</code>) that provides a <strong>zero-refactor migration path from modular monolith to microservices</strong>.</li>
+      <li>Validated the architecture against the platform's load profile: <strong>P95 &lt; 500ms</strong> across <strong>27 tables and 40+ indexes</strong>.</li>
     </ul>
 
     <h3 class="section-title-sm">Stack</h3>
@@ -782,6 +795,7 @@
 <footer class="site-footer">
   <div class="container site-footer-inner">
     <span>&copy; 2026 Christian Jay Mendez</span>
+
     <span class="dot-sep">·</span>
     <span>Living engineering portfolio</span>
   </div>
