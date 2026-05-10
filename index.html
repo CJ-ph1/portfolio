@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Tech Stack — Knowledge Journey Explorer</title>
+<title>Christian Mendez — Backend Engineer</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -64,8 +64,7 @@
             <span class="hero-avatar-fallback">CJ</span>
           </div>
           <h1 class="hero-name">Christian Jay Mendez</h1>
-          <p class="hero-role">Python-First Backend Engineer</p>
-          <p class="hero-affil">Architect-minded · Mentor</p>
+          <p class="hero-role">Software Developer</p>
           <div class="hero-socials">
             <a class="social-icon" href="mailto:cjaymendezw@gmail.com" aria-label="Email">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -89,10 +88,7 @@
               <h2 class="block-title">Professional Summary</h2>
             </div>
             <p class="block-prose">
-              I'm a Python-first backend engineer who thinks about software <strong>architecturally before syntactically</strong> &mdash; bounded domains, clean layers, and data flow that's easy to reason about. My primary stack is FastAPI + SQLAlchemy + Alembic, deployed behind Nginx on Linode VPS infrastructure.
-            </p>
-            <p class="block-prose">
-              I also mentor junior engineers on a parallel TypeScript stack I built as a one-to-one mirror of my Python practices &mdash; <strong>TSOA</strong> for FastAPI's auto-Swagger, <strong>Prisma</strong> for Alembic-style migrations, matching lint and pre-commit tooling. Beyond the code, I walk them through <strong>Git workflows</strong> and the production lifecycle: <strong>Linode</strong>, <strong>Nginx</strong>, <strong>SSH keys</strong>, and <strong>least-privilege Linux users</strong> &mdash; so by their first deploy they understand both how the request reaches the app and who's allowed on the box.
+              Full-stack developer with a strong focus on backend systems and scalable architecture. Experienced in building and optimizing production systems, collaborating with international clients and cross-functional teams, and delivering maintainable software solutions. Proven track record in mentoring interns through hands-on guidance, task ownership, and end-to-end exposure to software development lifecycles, from implementation to deployment.
             </p>
             <a class="cta-btn" href="mailto:christian.mendez@easycom-intl.com">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -140,60 +136,69 @@
   <!-- ═══════════ PROJECTS INDEX ═══════════ -->
   <div id="view-projects" class="view">
     <h2>Projects</h2>
-    <p class="subtitle">Six engagements I've shipped &mdash; from architecting a 17-module rewrite to owning client backends end-to-end.</p>
+    <p class="subtitle">Seven engagements I've shipped &mdash; from architecting a 17-module rewrite to owning client backends end-to-end.</p>
     <div class="projects-grid">
 
       <button class="project-card" type="button" onclick="showView('project-hr')">
-        <span class="project-role">Architect &amp; Tech Lead · Mentor of 6 Interns</span>
+        <span class="project-role">Backend Architect &amp; Tech Lead · Team of 6</span>
         <h4>HR Information System</h4>
-        <p>17-module modular monolith on TypeScript + TSOA + Prisma + TiDB Cloud, with architectural fitness tests gated by Husky.</p>
+        <p>Internal HR platform covering employee records, organisational structure, and HR workflows. Led a six-intern rewrite from JavaScript + Sequelize to TypeScript.</p>
         <div class="project-stack">
-          <span class="stack-chip">TypeScript</span><span class="stack-chip">Prisma</span><span class="stack-chip">TiDB</span><span class="stack-chip">Socket.IO</span>
+          <span class="stack-chip">TypeScript (strict)</span><span class="stack-chip">Express + TSOA</span><span class="stack-chip">Prisma v6</span><span class="stack-chip">TiDB Cloud</span><span class="stack-chip">tsyringe</span><span class="stack-chip">ESLint</span><span class="stack-chip">Husky</span><span class="stack-chip">Git</span>
         </div>
       </button>
 
       <button class="project-card" type="button" onclick="showView('project-truck')">
-        <span class="project-role">Sole Backend Owner</span>
-        <h4>Truck Delivery Slot Reservation</h4>
-        <p>Async FastAPI service with dual auth (JWT + scoped, hashed API keys), full ownership of schema, migrations, and delivery.</p>
+        <span class="project-role">Backend Engineer · End-to-End Owner</span>
+        <h4>Truck Delivery Slot Reservation Platform</h4>
+        <p>Logistics platform for e-commerce partners to book truck delivery time slots. Sole backend owner for schema, migrations, authentication, and iterative delivery.</p>
         <div class="project-stack">
-          <span class="stack-chip">FastAPI</span><span class="stack-chip">PostgreSQL</span><span class="stack-chip">Alembic</span><span class="stack-chip">Docker</span>
+          <span class="stack-chip">Python 3.11</span><span class="stack-chip">FastAPI (async)</span><span class="stack-chip">SQLAlchemy 2.0 async</span><span class="stack-chip">PostgreSQL (Neon)</span><span class="stack-chip">Alembic</span><span class="stack-chip">Pydantic v2</span><span class="stack-chip">Docker</span>
         </div>
       </button>
 
       <button class="project-card" type="button" onclick="showView('project-shipper')">
-        <span class="project-role">Sole Backend Owner</span>
-        <h4>Shipper Visibility Portal (BFF)</h4>
-        <p>Multi-tenant BFF over external TMS + WMS systems. Tenant isolation enforced at the query layer with composite indexes per shipper.</p>
+        <span class="project-role">Backend Engineer · End-to-End Owner</span>
+        <h4>Shipper Visibility Portal — Multi-Tenant Tracking</h4>
+        <p>BFF over external TMS + WMS systems with tenant-scoped data isolation enforced at the query layer.</p>
         <div class="project-stack">
-          <span class="stack-chip">FastAPI</span><span class="stack-chip">PostgreSQL</span><span class="stack-chip">SQLAlchemy 2.0</span><span class="stack-chip">JWT</span>
+          <span class="stack-chip">Python 3.11</span><span class="stack-chip">FastAPI (async)</span><span class="stack-chip">SQLAlchemy 2.0 async</span><span class="stack-chip">PostgreSQL (Neon)</span><span class="stack-chip">Alembic</span><span class="stack-chip">JWT</span><span class="stack-chip">pre-commit</span>
         </div>
       </button>
 
       <button class="project-card" type="button" onclick="showView('project-realtime')">
-        <span class="project-role">Feature Engineer</span>
-        <h4>Real-Time Multilingual Chat</h4>
-        <p>Joined an established Node.js + Socket.IO platform. Shipped Vietnamese localization end-to-end and fixed a notification race with atomic Mongo operators.</p>
+        <span class="project-role">Backend Engineer · Targeted Contributor</span>
+        <h4>Real-Time Multilingual Team Chat Platform</h4>
+        <p>Joined an established Node.js + MongoDB + Socket.IO codebase and delivered targeted localization and race-condition fixes.</p>
         <div class="project-stack">
-          <span class="stack-chip">Node.js</span><span class="stack-chip">Socket.IO</span><span class="stack-chip">MongoDB</span><span class="stack-chip">Redis</span>
+          <span class="stack-chip">Node.js</span><span class="stack-chip">Socket.IO</span><span class="stack-chip">MongoDB</span><span class="stack-chip">Redis</span><span class="stack-chip">Bull</span><span class="stack-chip">OpenAI / OpenRouter</span>
         </div>
       </button>
 
       <button class="project-card" type="button" onclick="showView('project-pos')">
-        <span class="project-role">Backend Developer</span>
-        <h4>POS &amp; Cash Management</h4>
-        <p>POS, reconciliation, inventory, and reporting features in async FastAPI on TiDB Cloud, with Celery jobs and CloudWatch logging on AWS ECS Fargate.</p>
+        <span class="project-role">Backend Engineer · End-to-End Owner</span>
+        <h4>Point-of-Sale &amp; Cash Management Backend</h4>
+        <p>Retail backend for sales, reconciliation, inventory, and reporting features on TiDB Cloud, deployed to AWS ECS Fargate.</p>
         <div class="project-stack">
-          <span class="stack-chip">FastAPI</span><span class="stack-chip">TiDB</span><span class="stack-chip">Celery</span><span class="stack-chip">AWS ECS</span>
+          <span class="stack-chip">Python 3.11</span><span class="stack-chip">FastAPI (async)</span><span class="stack-chip">TiDB Cloud</span><span class="stack-chip">Celery + Beat</span><span class="stack-chip">AWS ECS Fargate</span><span class="stack-chip">CloudWatch</span><span class="stack-chip">Loguru</span>
         </div>
       </button>
 
       <button class="project-card" type="button" onclick="showView('project-retail')">
-        <span class="project-role">Backend Developer</span>
-        <h4>Retail Order Management</h4>
-        <p>Feature delivery against bilingual JP/EN specs covering sales, ordering, inventory, receivables, B2C flows, plus scheduled batch jobs.</p>
+        <span class="project-role">Backend Engineer · End-to-End Owner</span>
+        <h4>Retail Order Management System</h4>
+        <p>Order management for an international retailer with bilingual JP/EN workflows across sales, procurement, inventory, receivables, and storefront features.</p>
         <div class="project-stack">
-          <span class="stack-chip">Python</span><span class="stack-chip">SQLAlchemy</span><span class="stack-chip">Alembic</span><span class="stack-chip">JP/EN</span>
+          <span class="stack-chip">Python (async)</span><span class="stack-chip">SQLAlchemy</span><span class="stack-chip">Alembic</span><span class="stack-chip">Git</span><span class="stack-chip">JP/EN specs</span>
+        </div>
+      </button>
+
+      <button class="project-card" type="button" onclick="showView('project-procurement')">
+        <span class="project-role">Backend Engineer · Procurement Module</span>
+        <h4>MVP Logistics Platform</h4>
+        <p>Owned the procurement bounded context in a beverage and food logistics MVP, shipping purchase and replenishment workflows on a tight delivery window.</p>
+        <div class="project-stack">
+          <span class="stack-chip">Python 3.11</span><span class="stack-chip">FastAPI</span><span class="stack-chip">SQLAlchemy 2.0 async</span><span class="stack-chip">TiDB Cloud 7.5</span><span class="stack-chip">Alembic</span><span class="stack-chip">Docker</span><span class="stack-chip">Black / Ruff / mypy</span>
         </div>
       </button>
 
@@ -203,16 +208,16 @@
   <!-- ═══════════ PROJECT DETAILS ═══════════ -->
 
   <div id="view-project-hr" class="view">
-    <span class="role-tag">Architect &amp; Tech Lead · Mentor of 6 Interns</span>
+    <span class="role-tag">Backend Architect &amp; Tech Lead · Team of 6</span>
     <h2>HR Information System</h2>
-    <p class="subtitle">Authored target architecture and led a 6-intern team rewriting a legacy JavaScript + Sequelize HR backend.</p>
+    <p class="subtitle">3 months — Internal HR platform covering employee records, organisational structure, and HR workflows.</p>
 
     <h3 class="section-title-sm">What I Did</h3>
     <ul class="task-list">
-      <li>Designed a <strong>17-module feature-based modular monolith</strong> and a 4-tier migration plan (Setup &rarr; Auth &rarr; 13 parallel feature modules &rarr; Aggregation), letting the team work modules in parallel rather than sequentially.</li>
-      <li>Mirrored Python DDD / modular-monolith patterns onto a TypeScript + TSOA + Prisma + TiDB Cloud stack so interns learn transferable architectural principles, not framework trivia.</li>
-      <li>Encoded module boundaries and Prisma model ownership as <strong>ESLint boundaries-plugin rules and architectural fitness tests</strong>, gated by Husky pre-commit / pre-push &mdash; wrong imports and unauthorized DB calls fail before code reaches main.</li>
-      <li>Mentored interns end-to-end: TS code, Git workflow, Linode deploys, Nginx, SSH keys, least-privilege Linux users.</li>
+      <li>Proposed and owned the target architecture, then led a six-intern team through a full rewrite of a legacy JavaScript + Sequelize backend in TypeScript.</li>
+      <li>Designed a <strong>17-module feature-based modular monolith</strong> and a four-tier migration plan (Setup &rarr; Auth &rarr; 13 parallel feature modules &rarr; Aggregation), allowing the team to develop modules concurrently rather than sequentially.</li>
+      <li>Translated Python DDD and modular-monolith patterns onto a TypeScript + TSOA + Prisma + TiDB Cloud stack so interns absorbed transferable architectural principles rather than framework-specific habits.</li>
+      <li>Encoded module boundaries and Prisma model ownership as <strong>ESLint boundaries-plugin rules and architectural fitness tests</strong>, gated by Husky pre-commit / pre-push hooks — boundary violations and unauthorised database calls fail before code reaches main, removing the need for manual architecture review on every PR.</li>
     </ul>
 
     <h3 class="section-title-sm">Mirror Stack &mdash; A Mentoring Philosophy</h3>
@@ -238,15 +243,16 @@
   </div>
 
   <div id="view-project-truck" class="view">
-    <span class="role-tag">Sole Backend Owner</span>
+    <span class="role-tag">Backend Engineer · End-to-End Owner</span>
     <h2>Truck Delivery Slot Reservation Platform</h2>
-    <p class="subtitle">Long-running client engagement with iterative scope &mdash; full ownership of schema, migrations, API design, and delivery.</p>
+    <p class="subtitle">Approximately 6 weeks — logistics platform that lets e-commerce partners book truck delivery time slots into distribution centres.</p>
 
     <h3 class="section-title-sm">What I Did</h3>
     <ul class="task-list">
-      <li>Designed a <strong>dual authentication model</strong> &mdash; JWT (HS256) for internal users plus prefixed, SHA-256-hashed, scoped API keys (<code>slots:read</code>, <code>reservations:write</code>, <code>reservations:cancel</code>) for partner e-commerce systems &mdash; enforcing least-privilege with clear test/live separation through key prefixes.</li>
-      <li>Owned the async FastAPI service end-to-end across many client-driven releases: PostgreSQL schema, Alembic migrations, services, routers, tests, Docker, and Git history.</li>
-      <li>Maintained the codebase under <strong>ruff + mypy strict + Alembic discipline</strong> with Git pre-commit / pre-push hooks &mdash; correctness automated rather than remembered.</li>
+      <li>Designed a <strong>dual authentication model</strong> — JWT for internal users and scoped, hashed API keys with read / write / cancel permission tiers for partner e-commerce systems, enforcing least-privilege access with clear test / live key separation.</li>
+      <li>Delivered the async FastAPI service across multiple client-driven release cycles, owning the full stack from PostgreSQL schema and Alembic migrations through service and router layers, test coverage, Docker packaging, and Git history.</li>
+      <li>Maintained <strong>ruff + mypy strict + Alembic migration discipline</strong> through a continuously evolving requirements cycle, keeping code quality consistent across every release without accumulating technical debt.</li>
+      <li>The system remained in active delivery throughout the engagement with no regression-caused rollbacks.</li>
     </ul>
 
     <h3 class="section-title-sm">Stack</h3>
@@ -256,7 +262,7 @@
   </div>
 
   <div id="view-project-shipper" class="view">
-    <span class="role-tag">Sole Backend Owner</span>
+    <span class="role-tag">Backend Engineer · End-to-End Owner</span>
     <h2>Multi-Tenant Shipper Visibility Portal (BFF)</h2>
     <p class="subtitle">Long-running client engagement &mdash; designed a BFF over external TMS + WMS systems for shippers' unified, tenant-scoped view.</p>
 
@@ -274,14 +280,14 @@
   </div>
 
   <div id="view-project-realtime" class="view">
-    <span class="role-tag">Feature Engineer</span>
-    <h2>Real-Time Multilingual Collaboration Platform</h2>
-    <p class="subtitle">Joined an established Node.js + MongoDB + Socket.IO chat platform &mdash; landed two targeted contributions.</p>
+    <span class="role-tag">Backend Engineer · Targeted Contributor</span>
+    <h2>Real-Time Multilingual Team Chat Platform</h2>
+    <p class="subtitle">1 month — joined an established Node.js + MongoDB + Socket.IO codebase and delivered two targeted contributions without disrupting existing functionality.</p>
 
     <h3 class="section-title-sm">What I Did</h3>
     <ul class="task-list">
-      <li>Shipped <strong>Vietnamese (vi) localization</strong> end-to-end across the language registry, LLM-driven translation pipeline, and notification-preview rendering.</li>
-      <li>Diagnosed and fixed a <strong>concurrent-dispatch notification race</strong> by replacing read-modify-write logic with atomic MongoDB operators (<code>$pull</code>, <code>$push</code>, <code>$inc</code>).</li>
+      <li>Shipped <strong>Vietnamese (vi) localisation</strong> end-to-end across the language registry, the LLM-driven translation pipeline, and notification-preview rendering.</li>
+      <li>Diagnosed and resolved a concurrent-dispatch notification race condition by replacing read-modify-write logic with atomic MongoDB operators (<code>$pull</code>, <code>$push</code>, <code>$inc</code>), so the database — not the application — serialised contention.</li>
     </ul>
 
     <h3 class="section-title-sm">Stack</h3>
@@ -291,15 +297,16 @@
   </div>
 
   <div id="view-project-pos" class="view">
-    <span class="role-tag">Backend Developer</span>
+    <span class="role-tag">Backend Engineer · End-to-End Owner</span>
     <h2>Point-of-Sale &amp; Cash Management Backend</h2>
-    <p class="subtitle">Feature delivery on an established 5-layer architecture (API &rarr; Service &rarr; CRUD &rarr; Model &rarr; DB) deployed to AWS ECS Fargate.</p>
+    <p class="subtitle">Approximately 2 months — retail point-of-sale backend covering store sales, cash reconciliation, inventory, and reporting.</p>
 
     <h3 class="section-title-sm">What I Did</h3>
     <ul class="task-list">
-      <li>Implemented <strong>POS transaction, cash-reconciliation, inventory, and reporting</strong> features in async FastAPI on TiDB Cloud.</li>
-      <li>Built scheduled <strong>end-of-day and reporting jobs</strong> on Celery + Beat with structured Loguru logging for CloudWatch.</li>
-      <li>Shipped financial features under <strong>Black/Ruff/MyPy/Bandit gates</strong> and Alembic migrations.</li>
+      <li>Implemented POS transaction, cash-reconciliation, inventory, and reporting features in an async FastAPI backend backed by TiDB Cloud (SaaS distributed SQL), chosen for horizontally scalable financial data workloads.</li>
+      <li>Built and maintained scheduled end-of-day and reporting jobs on Celery + Beat with structured Loguru logging configured for AWS CloudWatch ingestion, providing production observability without changes to the core deployment infrastructure.</li>
+      <li>Managed Docker image builds and AWS ECR / ECS Fargate deployment configuration across both delivery phases, working within the team's established infrastructure standards.</li>
+      <li>Shipped all financial-domain features under Black / Ruff / MyPy / Bandit quality gates with full Alembic migration discipline, sustaining the team's standards across a multi-phase delivery.</li>
     </ul>
 
     <h3 class="section-title-sm">Stack</h3>
@@ -309,7 +316,7 @@
   </div>
 
   <div id="view-project-retail" class="view">
-    <span class="role-tag">Backend Developer</span>
+    <span class="role-tag">Backend Engineer · End-to-End Owner</span>
     <h2>Retail Order Management System</h2>
     <p class="subtitle">Feature delivery against detailed bilingual (JP/EN) specifications covering sales, ordering, inventory, receivables, and B2C flows.</p>
 
@@ -326,6 +333,25 @@
     </div>
   </div>
 
+  <div id="view-project-procurement" class="view">
+    <span class="role-tag">Backend Engineer · Procurement Module</span>
+    <h2>MVP Logistics Platform</h2>
+    <p class="subtitle">Approximately 1 week — owned the procurement bounded context within a beverage and food logistics MVP.</p>
+
+    <h3 class="section-title-sm">What I Did</h3>
+    <ul class="task-list">
+      <li>Owned the procurement bounded context — purchases, replenishment, and supplier management — within a modular-monolith MVP delivered alongside a multi-developer team.</li>
+      <li>Designed and shipped 31 backend endpoints across PurchaseService and ReplenishmentService, covering purchase orders, replenishment approval, supplier management, and goods receipt workflows.</li>
+      <li>Structured the procurement context in a layered architecture (api &rarr; services &rarr; repositories &rarr; models &rarr; schemas &rarr; events) that provides a zero-refactor migration path from modular monolith to microservices.</li>
+      <li>Validated the architecture against the platform's load profile, aiming for P95 under 500ms across 27 tables and 40+ indexes.</li>
+    </ul>
+
+    <h3 class="section-title-sm">Stack</h3>
+    <div class="stack-chips">
+      <span class="stack-chip">Python 3.11</span><span class="stack-chip">FastAPI</span><span class="stack-chip">SQLAlchemy 2.0 async</span><span class="stack-chip">TiDB Cloud 7.5</span><span class="stack-chip">Alembic</span><span class="stack-chip">Docker</span><span class="stack-chip">Black / Ruff / mypy</span><span class="stack-chip">pre-commit</span>
+    </div>
+  </div>
+
   <!-- ═══════════ SKILLS ═══════════ -->
   <div id="view-skills" class="view">
     <h2>Skills</h2>
@@ -334,47 +360,42 @@
     <div class="skills-grid">
       <section class="skill-block">
         <h3 class="skill-block-title">Languages</h3>
-        <div class="stack-chips"><span class="stack-chip">Python 3.11+</span><span class="stack-chip">TypeScript (strict)</span><span class="stack-chip">JavaScript / Node.js</span></div>
+        <div class="stack-chips"><span class="stack-chip">Python</span></div>
       </section>
 
       <section class="skill-block">
         <h3 class="skill-block-title">Frameworks</h3>
-        <div class="stack-chips"><span class="stack-chip">FastAPI</span><span class="stack-chip">Express + TSOA</span><span class="stack-chip">Express + Socket.IO</span></div>
+        <div class="stack-chips"><span class="stack-chip">FastAPI</span></div>
       </section>
 
       <section class="skill-block">
         <h3 class="skill-block-title">Databases</h3>
-        <div class="stack-chips"><span class="stack-chip">PostgreSQL (Neon)</span><span class="stack-chip">TiDB Cloud</span><span class="stack-chip">MongoDB</span><span class="stack-chip">Redis</span></div>
+        <div class="stack-chips"><span class="stack-chip">TiDB</span></div>
       </section>
 
       <section class="skill-block">
         <h3 class="skill-block-title">ORMs &amp; Migrations</h3>
-        <div class="stack-chips"><span class="stack-chip">SQLAlchemy 2.0 async</span><span class="stack-chip">Alembic</span><span class="stack-chip">Prisma v6</span><span class="stack-chip">Mongoose</span></div>
+        <div class="stack-chips"><span class="stack-chip">SQLAlchemy</span><span class="stack-chip">Alembic</span></div>
       </section>
 
       <section class="skill-block">
         <h3 class="skill-block-title">Cloud &amp; DevOps</h3>
-        <div class="stack-chips"><span class="stack-chip">AWS ECS Fargate</span><span class="stack-chip">ECR</span><span class="stack-chip">S3</span><span class="stack-chip">ALB</span><span class="stack-chip">CloudWatch</span><span class="stack-chip">Secrets Manager</span><span class="stack-chip">Linode</span><span class="stack-chip">Nginx</span><span class="stack-chip">Docker</span><span class="stack-chip">Git + Husky / pre-commit</span></div>
-      </section>
-
-      <section class="skill-block">
-        <h3 class="skill-block-title">Async &amp; Jobs</h3>
-        <div class="stack-chips"><span class="stack-chip">asyncio</span><span class="stack-chip">Celery + Beat</span><span class="stack-chip">Bull</span><span class="stack-chip">atomic DB operators</span><span class="stack-chip">Redis distributed locks</span><span class="stack-chip">circuit breakers</span><span class="stack-chip">retry-with-backoff</span></div>
+        <div class="stack-chips"><span class="stack-chip">Docker</span><span class="stack-chip">Git</span><span class="stack-chip">GitHub</span><span class="stack-chip">Linode</span></div>
       </section>
 
       <section class="skill-block">
         <h3 class="skill-block-title">Architecture</h3>
-        <div class="stack-chips"><span class="stack-chip">DDD</span><span class="stack-chip">Modular Monolith</span><span class="stack-chip">enforced boundaries</span><span class="stack-chip">BFF</span><span class="stack-chip">multi-tenant query isolation</span><span class="stack-chip">dual auth (JWT + scoped API keys)</span><span class="stack-chip">service-layer SSOT</span></div>
+        <div class="stack-chips"><span class="stack-chip">Event-Driven Architecture</span><span class="stack-chip">Domain-Driven Design</span><span class="stack-chip">Modular Monolith / Microservices</span></div>
       </section>
 
       <section class="skill-block">
         <h3 class="skill-block-title">Quality</h3>
-        <div class="stack-chips"><span class="stack-chip">mypy strict</span><span class="stack-chip">TS strict</span><span class="stack-chip">ruff / black</span><span class="stack-chip">ESLint boundaries</span><span class="stack-chip">Bandit</span><span class="stack-chip">pytest / pytest-asyncio</span><span class="stack-chip">Jest</span><span class="stack-chip">Supertest</span><span class="stack-chip">MongoMemoryServer</span></div>
+        <div class="stack-chips"><span class="stack-chip">Black</span><span class="stack-chip">Ruff</span><span class="stack-chip">pre-commit</span></div>
       </section>
 
       <section class="skill-block">
         <h3 class="skill-block-title">Tools</h3>
-        <div class="stack-chips"><span class="stack-chip">DBeaver</span><span class="stack-chip">MongoDB Compass</span><span class="stack-chip">Postman</span><span class="stack-chip">Swagger</span><span class="stack-chip">VS Code (Remote-SSH)</span><span class="stack-chip">GitHub Actions</span><span class="stack-chip">Claude Code</span></div>
+        <div class="stack-chips"><span class="stack-chip">Postman</span><span class="stack-chip">Swagger / OpenAPI</span><span class="stack-chip">DBeaver</span><span class="stack-chip">MongoDB Compass</span><span class="stack-chip">Claude Code</span><span class="stack-chip">Cowork</span><span class="stack-chip">Chat</span></div>
       </section>
     </div>
   </div>

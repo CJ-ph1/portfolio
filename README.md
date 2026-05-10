@@ -20,9 +20,9 @@ Click any card to expand and see the detail.
 
 ## Who I am as an engineer
 
-I'm a Python-first backend engineer who thinks about software architecturally before syntactically. I care more about how modules communicate, how domains stay bounded, and how layers separate responsibilities than I do about squeezing out language tricks.
+I'm a Python-first backend engineer based in the Philippines (remote-ready), delivering backend systems for international clients across logistics, retail, and HR domains. Core expertise is in FastAPI, async SQLAlchemy 2.0, and Alembic, with working fluency in TypeScript and Node.js.
 
-My primary stack is Python with **FastAPI**, **SQLAlchemy**, and **Alembic**, deployed behind **Nginx** on **Linode** VPS infrastructure. I'm most comfortable reasoning about data flow from the HTTP layer through validation, domain logic, and the ORM — and I can explain why each layer exists, not just how to call into it.
+I own systems end-to-end — schema, migrations, API design, integrations, and deployment — and enforce correctness through automated tooling: lint boundaries, architectural fitness tests, type-strictness, and Git pre-commit / pre-push hooks — rather than manual review.
 
 ### The mirror stack — a mentoring philosophy
 
@@ -43,11 +43,21 @@ When interns learn one side, the concepts transfer cleanly to the other. The arc
 
 ## At a glance
 
-**Primary Stack** — Python 3.11+ · FastAPI · SQLAlchemy · Alembic · PostgreSQL · MySQL · Redis · Ruff · Mypy · Pre-commit
+**Core Stack** — Python · FastAPI · SQLAlchemy · TiDB · Alembic
 
-**Infrastructure & Tools** — Docker · Linode VPS · Nginx · GitHub · GitHub Actions · VS Code (Remote-SSH, Dev Containers) · DBeaver · Postman · Swagger
+**System Design** — Event-Driven Architecture · Domain-Driven Design · Modular Monolith / Microservices Architecture
 
-**Mirror Stack (JS/TS for mentoring)** — TypeScript · Node.js · Express · TSOA · Prisma · Tsyringe · ESLint · Husky
+**Code Quality** — Black · Ruff · pre-commit
+
+**Development & Collaboration Tools** — Docker · Git · GitHub
+
+**API Development & Testing** — Postman · Swagger / OpenAPI
+
+**Database Tools** — DBeaver · MongoDB Compass
+
+**AI Tools** — Claude Code · Cowork · Chat
+
+**Deployment & Infrastructure** — Linode
 
 **System Design** — Modular Monolith · Event-Driven Architecture · Domain-Driven Design · Microservices
 
@@ -85,6 +95,6 @@ This is a living page. Percentages and capabilities are updated as my knowledge 
 
 ## Connect
 
-- **GitHub** — _[your-github-handle]_
-- **LinkedIn** — _[your-linkedin-url]_
-- **Email** — _[your-email]_
+- **GitHub** — https://github.com/CJ-ph1
+- **LinkedIn** — https://www.linkedin.com/in/christian-jay-mendez-b8931a369/
+- **Email** — christian.mendez@easycom-intl.com
